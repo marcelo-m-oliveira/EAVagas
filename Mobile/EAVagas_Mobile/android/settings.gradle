@@ -1,0 +1,3 @@
+rootProject.name = 'EAVagas_Mobile'
+
+include ':app'
