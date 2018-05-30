@@ -9,9 +9,7 @@ export default class App extends Component {
     return(
       <View style={styles.fundo}>
         <View>
-        <TouchableOpacity style={styles.botao}><Image style = {styles.imagem3} source = {require("./imagens/martin.png")}/></TouchableOpacity>
         <Image style = {styles.imagem1} source = {require("./imagens/logo.png")}/>
-        //<Image style = {styles.imagem3} source = {require("./imagens/martin.png")}/>
         <Text style={styles.texto2}>EA Vagas</Text>
         <Text style={styles.texto}>Você está em: Paris</Text>
         <Text style={styles.texto3}> Aqui você escolhe onde quer estacionar 
@@ -34,7 +32,8 @@ const styles = StyleSheet.create({
     color: '#000000',
     fontSize: 25,
     alignSelf: 'center',
-    marginBottom: 50
+    marginBottom: 50,
+    fontWeight: 'bold'
   },
   imagem1:{
     height: 50,

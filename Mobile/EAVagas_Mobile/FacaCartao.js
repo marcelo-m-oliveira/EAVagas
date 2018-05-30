@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     textAlign: 'center',
     marginBottom: 20,
+    fontWeight: 'bold'
   }, 
   texto1:{
     color: '#585858',
@@ -63,11 +64,13 @@ const styles = StyleSheet.create({
   textoBotao:{
     color: '#FFFFFF',
     fontSize: 13,
-    alignSelf: 'center'
+    alignSelf: 'center',
+    fontWeight: 'bold'
   },
   textoBotao2:{
-    color: '#FFFFFF',
+    color: '#585858',
     fontSize: 13,
-    alignSelf: 'center'
+    alignSelf: 'center',
+    fontWeight: 'bold'
   }
-})
+});

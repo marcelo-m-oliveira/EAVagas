@@ -41,7 +41,8 @@ const styles = StyleSheet.create({
     color: '#585858',
     fontSize: 30,
     alignSelf: 'center',
-    marginBottom: 50
+    marginBottom: 50,
+    fontWeight: 'bold'
   },
   botao1:{
     marginTop: 60,

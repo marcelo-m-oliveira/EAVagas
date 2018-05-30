@@ -25,11 +25,13 @@ export default class App extends Component {
 const styles = StyleSheet.create({
 
   texto1:{
-    marginTop: 40,
+    marginTop: 100,
     color: '#585858',
     textAlign: 'center',
     fontSize: 30,
     margin: 15,
+    marginBottom: -40,
+    fontWeight: 'bold'
   }, 
   fundo:{
     flex: 1, 

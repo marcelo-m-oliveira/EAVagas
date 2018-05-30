@@ -69,12 +69,14 @@ const styles = StyleSheet.create({
     fontSize: 27,
     textAlign: 'center',
     marginBottom: 5,
+    fontWeight: 'bold'
   }, 
   texto1:{
     color: '#585858',
     fontSize: 25,
     marginBottom: 2,
-    textAlign: 'center'
+    textAlign: 'center',
+    fontWeight: 'bold'
   }, 
   texto2:{
     color: '#00FF7F',
@@ -192,7 +194,7 @@ const styles = StyleSheet.create({
     width: 200,
     alignSelf: 'center',
     padding: 10,
-    marginTop: 50,
+    marginTop: 70,
     borderRadius: 7
   },
   

@@ -12,7 +12,9 @@ export default class App extends Component {
           <TouchableOpacity style = {styles.botao1}>
               <Text style = {styles.textoBotao1}> Voltar </Text>
             </TouchableOpacity>
+          
           <Text style={styles.texto}>Perfil</Text>
+          <Image style = {styles.imagem} source = {require("./imagens/perfil.png")}/>
           <Text style={styles.texto1}>Membro há 2 semanas</Text>
           <Text style={styles.texto2}>Nome: Jubileu Junior</Text>
           <Text style={styles.texto3}>Veículo: Carro FRD-3425</Text>
@@ -31,38 +33,48 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
 
+  imagem:{
+    resizeMode: 'contain',
+    height: 80,
+    marginLeft: -140
+  },
   texto:{
-    marginTop: 30,
+    marginTop: 10,
     color: '#585858',
     fontSize: 30,
     textAlign: 'center',
-    marginBottom: 20,
+    marginBottom: 20
   }, 
   texto1:{
     color: '#FF6347',
     fontSize: 15,
     marginBottom: 30,
-    textAlign: 'center'
+    marginLeft: 160,
+    marginTop: -20,
+    fontStyle: 'italic'
   }, 
   texto2:{
     color: '#585858',
     fontSize: 15,
     marginTop: 35,
     marginBottom: 30,
-    textAlign: 'center'
+    textAlign: 'center',
+    fontWeight: 'bold'
   },
   texto3:{
     color: '#585858',
     fontSize: 15,
     //marginTop: 20,
     marginBottom: 30,
-    textAlign: 'center'
+    textAlign: 'center',
+    fontWeight: 'bold'
   },
   texto4:{
     color: '#585858',
     fontSize: 15,
     marginBottom: 30,
-    textAlign: 'center'
+    textAlign: 'center',
+    fontWeight: 'bold'
   },
   fundo:{
     flex: 1, 
