@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="LabelDadosVeiculo" layoutX="152.0" layoutY="47.0" text="Dados do Veículo">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextFieldPlaca" layoutX="226.0" layoutY="149.0" promptText="Placa do Veículo" />
+      <SplitMenuButton fx:id="SplitMenuButtonTipoVeic" layoutX="209.0" layoutY="188.0" mnemonicParsing="false" text="Selecione o tipo do veículo">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Carro" />
+          <MenuItem mnemonicParsing="false" text="Moto" />
+        </items>
+      </SplitMenuButton>
+      <Button fx:id="ButtonProximo" layoutX="261.0" layoutY="237.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Próximo" />
+      <CheckBox fx:id="CheckBoxTermos" layoutX="217.0" layoutY="276.0" mnemonicParsing="false" text="Eu aceito os termos de uso." />
+   </children>
+</AnchorPane>

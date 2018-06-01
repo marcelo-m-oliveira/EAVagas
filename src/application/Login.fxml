@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="ImageViewEA" fitHeight="139.0" fitWidth="140.0" layoutX="230.0" layoutY="53.0">
+         <image>
+            <Image url="@../../../../Documents/EAVagas/Mobile/EAVagas_Mobile/imagens/logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="ButtonLogin" layoutX="226.0" layoutY="294.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="Login" />
+      <Button fx:id="ButtonCadastrar" layoutX="308.0" layoutY="294.0" mnemonicParsing="false" text="Cadastrar" />
+      <Hyperlink fx:id="HyperlinkEsqueceu" layoutX="217.0" layoutY="326.0" text="Esqueceu seu email ou senha?" />
+      <PasswordField fx:id="PasswordFieldSenha" layoutX="226.0" layoutY="252.0" promptText="Senha" />
+      <TextField fx:id="TextFieldEmail" layoutX="226.0" layoutY="218.0" promptText="Email" />
+   </children>
+</AnchorPane>
