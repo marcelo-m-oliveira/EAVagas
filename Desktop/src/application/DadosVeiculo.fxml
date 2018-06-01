@@ -9,22 +9,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label fx:id="LabelDadosVeiculo" layoutX="152.0" layoutY="47.0" text="Dados do Veículo">
+      <Label fx:id="LabelDadosVeiculo" layoutX="152.0" layoutY="59.0" text="Dados do Veículo">
          <font>
             <Font name="System Bold" size="36.0" />
          </font>
       </Label>
-      <TextField fx:id="TextFieldPlaca" layoutX="226.0" layoutY="149.0" promptText="Placa do Veículo" />
-      <SplitMenuButton fx:id="SplitMenuButtonTipoVeic" layoutX="209.0" layoutY="188.0" mnemonicParsing="false" text="Selecione o tipo do veículo">
+      <TextField fx:id="TextFieldPlaca" layoutX="225.0" layoutY="149.0" promptText="Placa do Veículo" />
+      <SplitMenuButton fx:id="SplitMenuButtonTipoVeic" layoutX="199.0" layoutY="216.0" mnemonicParsing="false" style="-fx-background-image: #DF0101;" text="Selecione o tipo do veículo">
         <items>
           <MenuItem mnemonicParsing="false" text="Carro" />
           <MenuItem mnemonicParsing="false" text="Moto" />
         </items>
       </SplitMenuButton>
-      <Button fx:id="ButtonProximo" layoutX="261.0" layoutY="237.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Próximo" />
-      <CheckBox fx:id="CheckBoxTermos" layoutX="217.0" layoutY="276.0" mnemonicParsing="false" text="Eu aceito os termos de uso." />
+      <Button fx:id="ButtonProximo" layoutX="261.0" layoutY="277.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="79.0" style="-fx-background-color: #DF0101;" text="Próximo" />
+      <CheckBox fx:id="CheckBoxTermos" layoutX="202.0" layoutY="331.0" mnemonicParsing="false" text="Eu aceito os termos de uso." />
    </children>
 </AnchorPane>

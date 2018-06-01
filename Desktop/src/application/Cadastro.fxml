@@ -9,28 +9,27 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label fx:id="LabelCrieConta" layoutX="211.0" layoutY="44.0" text="Crie a sua conta">
+      <Label fx:id="LabelCrieConta" layoutX="211.0" layoutY="14.0" text="Crie a sua conta">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="LabelDadosPessoais" layoutX="243.0" layoutY="96.0" text="Dados Pessoais">
+      <Label fx:id="LabelDadosPessoais" layoutX="243.0" layoutY="57.0" text="Dados Pessoais">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <PasswordField fx:id="PasswordFieldConfirmeSenha" layoutX="359.0" layoutY="253.0" promptText="Confirme a senha" />
-      <PasswordField fx:id="PasswordFieldSenha" layoutX="111.0" layoutY="253.0" promptText="Senha" />
-      <TextField fx:id="TextFieldNome" layoutX="110.0" layoutY="145.0" promptText="Nome" />
-      <TextField fx:id="TextFielSobrenome" layoutX="359.0" layoutY="145.0" promptText="Sobrenome" />
-      <TextField fx:id="TextFieldCPF" layoutX="110.0" layoutY="200.0" promptText="CPF" />
-      <TextField fx:id="TextFieldTelefone" layoutX="359.0" layoutY="200.0" promptText="Telefone" />
-      <TextField fx:id="TextFieldEmail" layoutX="110.0" layoutY="299.0" promptText="Email" />
-      <Button fx:id="ButtonProximo" layoutX="395.0" layoutY="331.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="Próximo" />
-      <CheckBox fx:id="CheckBoxTermos" layoutX="350.0" layoutY="303.0" mnemonicParsing="false" text="Eu aceito os termos de uso." />
-      <Hyperlink fx:id="HyperlinkEntre" layoutX="336.0" layoutY="363.0" text="Você já tem uma conta? Entre aqui." />
+      <PasswordField fx:id="PasswordFieldConfirmeSenha" layoutX="348.0" layoutY="200.0" promptText="Confirme a senha" />
+      <PasswordField fx:id="PasswordFieldSenha" layoutX="110.0" layoutY="200.0" promptText="Senha" />
+      <TextField fx:id="TextFieldNome" layoutX="110.0" layoutY="119.0" promptText="Nome" />
+      <TextField fx:id="TextFielSobrenome" layoutX="348.0" layoutY="119.0" promptText="Sobrenome" />
+      <TextField fx:id="TextFieldCPF" layoutX="110.0" layoutY="158.0" promptText="CPF" />
+      <TextField fx:id="TextFieldTelefone" layoutX="348.0" layoutY="158.0" promptText="Telefone" />
+      <TextField fx:id="TextFieldEmail" layoutX="110.0" layoutY="240.0" promptText="Email" />
+      <Button fx:id="ButtonProximo" layoutX="396.0" layoutY="292.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="78.0" style="-fx-background-color: #DF0101;" text="Próximo" />
+      <CheckBox fx:id="CheckBoxTermos" layoutX="348.0" layoutY="247.0" mnemonicParsing="false" text="Eu aceito os termos de uso." />
+      <Hyperlink fx:id="HyperlinkEntre" layoutX="325.0" layoutY="346.0" text="Você já tem uma conta? Entre aqui." textFill="#585858" />
    </children>
 </AnchorPane>

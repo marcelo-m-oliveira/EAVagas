@@ -7,40 +7,39 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label fx:id="LabelPerfil" layoutX="255.0" layoutY="59.0" text="Perfil">
+      <Label fx:id="LabelPerfil" layoutX="255.0" layoutY="28.0" text="Perfil">
          <font>
             <Font name="System Bold" size="36.0" />
          </font>
       </Label>
-      <ImageView fx:id="ImageViewFoto" fitHeight="64.0" fitWidth="64.0" layoutX="205.0" layoutY="124.0">
+      <ImageView fx:id="ImageViewFoto" fitHeight="64.0" fitWidth="64.0" layoutX="203.0" layoutY="106.0">
          <image>
             <Image url="@../../../../Documents/EAVagas/Mobile/EAVagas_Mobile/imagens/perfil.png" />
          </image>
       </ImageView>
-      <Label fx:id="LabelMembro" layoutX="276.0" layoutY="165.0" text="Membro há 2 semanas">
+      <Label fx:id="LabelMembro" layoutX="274.0" layoutY="147.0" text="Membro há 2 semanas">
          <font>
             <Font name="System Italic" size="12.0" />
          </font>
       </Label>
-      <Label fx:id="LabelNome" layoutX="210.0" layoutY="210.0" text="Nome: Jubileu Junior">
+      <Label fx:id="LabelNome" layoutX="208.0" layoutY="192.0" text="Nome: Jubileu Junior">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="LabelVeiculo" layoutX="210.0" layoutY="248.0" text="Veículo: Carro FRF-3425">
+      <Label fx:id="LabelVeiculo" layoutX="208.0" layoutY="230.0" text="Veículo: Carro FRF-3425">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="LabelEstacionamento" layoutX="210.0" layoutY="286.0" text="Estac. Preferido: Perdigão">
+      <Label fx:id="LabelEstacionamento" layoutX="208.0" layoutY="268.0" text="Estac. Preferido: Perdigão">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button fx:id="ButtonSair" layoutX="272.0" layoutY="332.0" mnemonicParsing="false" text="Sair do App" />
-      <Button fx:id="ButtonVoltar" layoutX="26.0" layoutY="22.0" mnemonicParsing="false" text="Voltar" />
+      <Button fx:id="ButtonSair" layoutX="272.0" layoutY="332.0" mnemonicParsing="false" style="-fx-background-color: #DF0101;" text="Sair do App" />
+      <Button fx:id="ButtonVoltar" layoutX="26.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-color: #DF0101;" text="Voltar" />
    </children>
 </AnchorPane>
