@@ -7,8 +7,8 @@ public class Pessoa {
 	private String senha;
 	private String cpf;
 	private String telefone;
-	  private Veiculo[] veiculo = new Veiculo [2]; 
-	  private CartaoCredito[] cartao; 
+	private Veiculo[] veiculo = new Veiculo [3]; 
+	private CartaoCredito[] cartao = new CartaoCredito[2]; 
 	
 	public Pessoa (String nome, String email, String senha, String cpf, String telefone) {
 		this.nome = nome;
