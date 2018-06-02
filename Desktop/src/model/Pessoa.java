@@ -7,7 +7,8 @@ public class Pessoa {
 	private String senha;
 	private String cpf;
 	private String telefone;
-	private Veiculo Car;
+	  private Veiculo[] veiculo = new Veiculo [2]; 
+	  private CartaoCredito[] cartao; 
 	
 	public Pessoa (String nome, String email, String senha, String cpf, String telefone) {
 		this.nome = nome;
@@ -40,4 +41,16 @@ public class Pessoa {
 	public String getTelefone() {
 		return telefone;
 	}
+	
+	public void setTelefone() { 
+		     
+	 } 
+	 
+	 public Veiculo[] getAutomovel() { 
+	    return veiculo; 
+	 } 
+	 
+	 public CartaoCredito[] getCartao() { 
+	    return cartao; 
+	 }
 }

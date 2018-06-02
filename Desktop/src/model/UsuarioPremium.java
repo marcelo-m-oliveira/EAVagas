@@ -2,18 +2,10 @@ package model;
 
 import java.util.Scanner;
 
-public class UserPremium extends Pessoa {
-
-	private String numCard;
-	private Pagamento Pa1;
+public class UsuarioPremium extends Pessoa {
 	
-	public UserPremium (String nome, String email, String senha, String cpf, String telefone, String numCard ) {
+	public UsuarioPremium (String nome, String email, String senha, String cpf, String telefone, String numCard ) {
 		super(nome, email, senha, cpf, telefone);
-		this.numCard = numCard;
-	}
-	
-	public String getNumCard() {
-		return numCard;
 	}
 }
 	/*public static void reatVaga() {

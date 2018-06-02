@@ -3,7 +3,6 @@ package model;
 public class Veiculo {
 	private String placaVeic;
 	private String tipoVeic;
-	private Pessoa Pe1;
 	
 	public Veiculo (String placaVeic, String tipoVeic) {
 		this.placaVeic = placaVeic; 

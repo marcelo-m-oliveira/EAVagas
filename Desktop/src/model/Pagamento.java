@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class Pagamento {
 	private Date hrpagamento;
-	private UserPremium Us1;
+	private UsuarioPremium Us1;
 	
 	public Pagamento (Date hrpagamento) {
 		this.hrpagamento = hrpagamento;
