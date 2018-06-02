@@ -1,6 +1,6 @@
 package model;
 
-public class Monitor extends Pessoas {
+public class Monitor extends Pessoa {
 	//
 	//
 

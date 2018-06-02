@@ -1,17 +1,21 @@
 package model;
 
-public class Veiculos {
+public class Veiculo {
 	private String placaVeic;
 	private String tipoVeic;
-	private Pessoas Pe1;
+	private Pessoa Pe1;
 	
-	public Veiculos (String placaVeic, String tipoVeic) {
+	public Veiculo (String placaVeic, String tipoVeic) {
 		this.placaVeic = placaVeic; 
 		this.tipoVeic = tipoVeic;
 	}
 	
 	public String getPlacaVeic() {
 		return placaVeic;
+	}
+	
+	public void setPlacaVeic() {
+		
 	}
 	
 	public String getTipoVeic() {

@@ -2,7 +2,7 @@ package model;
 
 import java.util.Scanner;
 
-public class UserPremium extends Pessoas {
+public class UserPremium extends Pessoa {
 
 	private String numCard;
 	private Pagamento Pa1;

@@ -1,7 +1,7 @@
 package model;
 import java.util.Scanner;
 
-public class Admin extends Pessoas {
+public class Admin extends Pessoa {
 	
 	//
 	//

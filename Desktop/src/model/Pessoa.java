@@ -1,15 +1,15 @@
 package model;
-import model.Veiculos;
+import model.Veiculo;
 
-public class Pessoas {
+public class Pessoa {
 	private String nome;
 	private String email;
 	private String senha;
 	private String cpf;
 	private String telefone;
-	private Veiculos Car;
+	private Veiculo Car;
 	
-	public Pessoas (String nome, String email, String senha, String cpf, String telefone) {
+	public Pessoa (String nome, String email, String senha, String cpf, String telefone) {
 		this.nome = nome;
 		this.email = email;
 		this.senha = senha;
@@ -23,6 +23,10 @@ public class Pessoas {
 	
 	public String getEmail() {
 		return email;
+	}
+	
+	public void setSenha() {
+		
 	}
 	
 	public String getSenha() {
