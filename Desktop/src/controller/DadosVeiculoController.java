@@ -7,7 +7,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.TextField;
 
-public class DadosVeiculo {
+public class DadosVeiculoController {
 
     @FXML
     private Label LabelDadosVeiculo;

@@ -6,7 +6,7 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-public class CadastraCartao {
+public class CadastraCartaoController {
 
     @FXML
     private Label LabelInsiraNumero;

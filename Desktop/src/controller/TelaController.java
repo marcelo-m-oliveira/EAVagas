@@ -1,4 +1,5 @@
 package controller;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -9,7 +10,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 
 public class TelaController {
-	
+
 	// Abre uma nova tela com o nome passado como parâmetro
 	public static void carregarTela(ActionEvent evento, String nomeTela, String titulo) {
 		if (evento != null) { // tem alguma tela para fechar antes
@@ -30,14 +31,14 @@ public class TelaController {
 			exibirJanela(AlertType.ERROR, "Alerta de Erro", "Erro!", "Não foi possível carregar a página solicitada!");
 		}
 	}
-	
+
 	// Exibe um alerta padrão de confirmação/erro na tela atual
 	public static void exibirJanela(AlertType tipoAlerta, String titulo, String cabecalho, String conteudo) {
 		Alert alerta = new Alert(tipoAlerta);
-    	alerta.setTitle(titulo);
-    	alerta.setHeaderText(cabecalho);
-    	alerta.setContentText(conteudo);
-    	alerta.showAndWait();
+		alerta.setTitle(titulo);
+		alerta.setHeaderText(cabecalho);
+		alerta.setContentText(conteudo);
+		alerta.showAndWait();
 	}
 
 }

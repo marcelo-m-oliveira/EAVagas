@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Hyperlink;
 
-public class Home {
+public class HomeController {
 
     @FXML
     private Hyperlink HyperlinkDadosUsuario;
