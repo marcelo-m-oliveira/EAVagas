@@ -39,12 +39,13 @@ const styles = StyleSheet.create({
     height: 50,
     resizeMode: 'contain',
     marginLeft: -80,
-    marginTop: 40
+    marginTop: 10
   },
   texto2:{
+    color: '#000000',
     marginLeft: 70,
     marginTop: -40,
-    fontSize: 15
+    fontSize: 18
   },
   texto3:{
     color: '#585858',
@@ -55,13 +56,9 @@ const styles = StyleSheet.create({
     marginBottom: 30
   },
   imagem2:{
-    resizeMode: 'contain',
-    height: 500,
-    marginLeft: -25
-  },
-  imagem3:{
-    resizeMode: 'contain',
-    height: 50,
-    alignSelf: 'center'
+    //resizeMode: 'contain',
+    height: 610,
+    marginLeft: 4
+    //alignSelf: 'center'
   }
 });

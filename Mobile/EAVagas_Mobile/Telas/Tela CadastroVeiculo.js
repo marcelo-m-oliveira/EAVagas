@@ -9,12 +9,15 @@ export default class App extends Component {
     return (
       <View style={styles.fundo}>
           <View>                  
-          <Text style={styles.texto1}>Insira o número do seu cartão de crédito</Text>
-            <TextInput style = {styles.campotext} placeholder = "Número do cartão"/>
-            <TextInput style = {styles.campotext1} placeholder = "Data de vencimento"/>
-            <TextInput style = {styles.campotext1} placeholder = "Código de segurança"/>
+          <Text style={styles.texto}>Dados do veículo</Text>
+            <TextInput style = {styles.campotext} placeholder = "Placa do veículo"/>
+            <Picker style = {styles.botao}>
+            <Picker.Item label="Selecione o tipo do seu veículo" value = ""/>
+            <Picker.Item label="Carro" value = "Carro"/>
+            <Picker.Item label="Moto" value="Moto"/>
+            </Picker>
             <TouchableOpacity style = {styles.botao}>
-              <Text style = {styles.textoBotao}>Confirmar</Text>
+              <Text style = {styles.textoBotao}> Próximo </Text>
             </TouchableOpacity>
           </View>
       </View>
@@ -24,27 +27,20 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
 
-  texto1:{
-    marginTop: 40,
+  texto:{
     color: '#585858',
-    textAlign: 'center',
-    fontSize: 30,
-    margin: 15,
+    fontSize: 25,
+    alignSelf: 'center',
+    marginTop: 150,
+    marginBottom: 50,
+    fontWeight: 'bold'
   }, 
   fundo:{
     flex: 1, 
     backgroundColor: 'white'
   },
   campotext:{
-    marginTop: 100,
-    backgroundColor: '#F2F2F2',
-    width: 300,
-    alignSelf: 'center',
-    padding: 10,
-    borderRadius: 4
-  },
-  campotext1:{
-    marginTop: 10,
+    marginTop: 18,
     backgroundColor: '#F2F2F2',
     width: 300,
     alignSelf: 'center',
@@ -53,15 +49,15 @@ const styles = StyleSheet.create({
   },
   botao:{
     backgroundColor: '#DA0505',
-    width: 200,
+    width: 300,
     alignSelf: 'center',
-    padding: 12,
-    marginTop: 45,
-    borderRadius: 7
+    padding: 10,
+    marginTop: 25,
+    borderRadius: 7,
   },
   textoBotao:{
     color: '#FFFFFF',
     fontSize: 20,
-    alignSelf: 'center'
+    alignSelf: 'center',
   }
 });

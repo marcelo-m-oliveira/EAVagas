@@ -1,26 +1,29 @@
 package application;
-	
+import controller.TelaController;
 import javafx.application.Application;
-import javafx.stage.Stage;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.BorderPane;
-
+import javafx.scene.control.Alert.AlertType;
+import javafx.stage.Stage;
 
 public class Main extends Application {
 	@Override
-	public void start(Stage primaryStage) {
+	public void start(Stage cenario) {
 		try {
-			BorderPane root = new BorderPane();
-			Scene scene = new Scene(root,400,400);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-			primaryStage.setScene(scene);
-			primaryStage.show();
-		} catch(Exception e) {
-			e.printStackTrace();
+			// carrega a tela do nome passado como parâmetro, ou seja, a tela inicial do sistema
+			Parent base = FXMLLoader.load(Main.class.getResource("Login.fxml"));
+			Scene cena = new Scene(base);
+			cenario.setScene(cena);
+			cenario.setTitle("EAVagas");
+			cenario.show();
+		} catch (Exception e) {
+			TelaController.exibirJanela(AlertType.ERROR, "Página inicial", "Erro!", 
+					"Não foi possível carregar a página inicial do sistema");
 		}
 	}
 	
 	public static void main(String[] args) {
-		launch(args);
+		launch(args); // método único padrão de execução de uma Aplicação FX
 	}
 }

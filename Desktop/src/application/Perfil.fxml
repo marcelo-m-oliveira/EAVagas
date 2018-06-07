@@ -14,11 +14,6 @@
             <Font name="System Bold" size="36.0" />
          </font>
       </Label>
-      <ImageView fx:id="ImageViewFoto" fitHeight="64.0" fitWidth="64.0" layoutX="203.0" layoutY="106.0">
-         <image>
-            <Image url="@../../../../Documents/EAVagas/Mobile/EAVagas_Mobile/imagens/perfil.png" />
-         </image>
-      </ImageView>
       <Label fx:id="LabelMembro" layoutX="274.0" layoutY="147.0" text="Membro há 2 semanas">
          <font>
             <Font name="System Italic" size="12.0" />
@@ -41,5 +36,10 @@
       </Label>
       <Button fx:id="ButtonSair" layoutX="272.0" layoutY="332.0" mnemonicParsing="false" style="-fx-background-color: #DF0101;" text="Sair do App" />
       <Button fx:id="ButtonVoltar" layoutX="26.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-color: #DF0101;" text="Voltar" />
+      <ImageView fitHeight="53.0" fitWidth="54.0" layoutX="208.0" layoutY="123.0">
+         <image>
+            <Image url="@../imagens/perfil.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

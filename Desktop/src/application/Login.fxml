@@ -8,17 +8,17 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ImageView fx:id="ImageViewEA" fitHeight="139.0" fitWidth="140.0" layoutX="230.0" layoutY="29.0">
-         <image>
-            <Image url="@../../../../Documents/EAVagas/Mobile/EAVagas_Mobile/imagens/logo.png" />
-         </image>
-      </ImageView>
-      <Button fx:id="ButtonLogin" layoutX="226.0" layoutY="294.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="67.0" style="-fx-background-color: #DF0101;" text="Login" textFill="WHITE" />
-      <Button fx:id="ButtonCadastrar" layoutX="308.0" layoutY="294.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="67.0" style="-fx-background-color: #DF0101;" text="Cadastrar" textFill="WHITE" />
-      <Hyperlink fx:id="HyperlinkEsqueceu" layoutX="212.0" layoutY="351.0" text="Esqueceu seu email ou senha?" textFill="#585858" />
+      <Button fx:id="ButtonLogin" layoutX="217.0" layoutY="294.0" mnemonicParsing="false" onAction="#FazerLogin" prefHeight="32.0" prefWidth="76.0" style="-fx-background-color: #DF0101;" text="Login" textFill="WHITE" />
+      <Button fx:id="ButtonCadastrar" layoutX="308.0" layoutY="294.0" mnemonicParsing="false" onAction="#CadastrarNovoUsuario" prefHeight="32.0" prefWidth="76.0" style="-fx-background-color: #DF0101;" text="Cadastrar" textFill="WHITE" />
+      <Hyperlink fx:id="HyperlinkEsqueceu" layoutX="212.0" layoutY="351.0" onAction="#RedefinirSenha" text="Esqueceu seu email ou senha?" textFill="#585858" />
       <PasswordField fx:id="PasswordFieldSenha" layoutX="224.0" layoutY="241.0" promptText="Senha" />
       <TextField fx:id="TextFieldEmail" layoutX="226.0" layoutY="200.0" promptText="Email" />
+      <ImageView fitHeight="124.0" fitWidth="130.0" layoutX="235.0" layoutY="45.0">
+         <image>
+            <Image url="@../imagens/logo.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

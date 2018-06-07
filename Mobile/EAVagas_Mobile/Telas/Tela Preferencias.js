@@ -19,12 +19,12 @@ export default class App extends Component {
           <Text style={styles.textoBotao2}> Conta </Text>
         </TouchableOpacity>
         
-        <TouchableOpacity style={styles.botao3}>
-          <Text style={styles.textoBotao3}> Notificações </Text>
+        <TouchableOpacity style={styles.botao2}>
+          <Text style={styles.textoBotao2}> Notificações </Text>
         </TouchableOpacity>
         
-        <TouchableOpacity style={styles.botao4}>
-          <Text style={styles.textoBotao4}> Ajuda </Text>
+        <TouchableOpacity style={styles.botao2}>
+          <Text style={styles.textoBotao2}> Ajuda </Text>
         </TouchableOpacity>
         
         </View>
@@ -63,22 +63,5 @@ const styles = StyleSheet.create({
   },
   textoBotao2:{
     fontSize: 25
-  },
-  botao3:{
-    marginLeft: 20,
-    padding: 10
-  },
-  textoBotao3:{
-    fontSize: 25
-  },
-  botao4:{
-    marginLeft: 20,
-    padding: 10
-  },
-  textoBotao4:{
-    fontSize: 25
-  }
- 
-  
-  
+  }  
 });

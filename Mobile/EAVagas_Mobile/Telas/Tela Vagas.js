@@ -14,9 +14,9 @@ export default class App extends Component {
             </TouchableOpacity>
           <Text style={styles.texto}>Estacionamento Perdigão</Text>
           <Text style={styles.texto1}>Escolha sua vaga</Text>
-          <Text style={styles.texto2}>★ <Text style={styles.texto21}>Disponível</Text></Text>
-          <Text style={styles.texto3}>★ <Text style={styles.texto21}>Reservado</Text></Text>
-          <Text style={styles.texto4}>★ <Text style={styles.texto21}>Ocupado</Text></Text>
+          <Text style={styles.texto2}>★ <Text style={styles.texto5}>Disponível</Text></Text>
+          <Text style={styles.texto3}>★ <Text style={styles.texto5}>Reservado</Text></Text>
+          <Text style={styles.texto4}>★ <Text style={styles.texto5}>Ocupado</Text></Text>
           
             
             <TouchableOpacity style = {styles.botao1}>
@@ -64,7 +64,7 @@ export default class App extends Component {
 const styles = StyleSheet.create({
 
   texto:{
-    marginTop: 20,
+    marginTop: 50,
     color: '#585858',
     fontSize: 27,
     textAlign: 'center',
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     marginTop: -51,
     marginBottom: 10,
-    marginLeft: 260
+    marginLeft: 300
   },
   fundo:{
     flex: 1, 
@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
     width: 70,
     marginLeft: 15,
     padding: 10,
-    marginTop: 50,
+    marginTop: 10,
     borderRadius: 7
   },
   textoBotao:{
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#00FF7F',
     width: 70,
     marginTop: -37,
-    marginLeft: 230,
+    marginLeft: 280,
     padding: 10,
     borderRadius: 7
   },
@@ -147,7 +147,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#B22222',
     width: 70,
     marginTop: -37,
-    marginLeft: 230,
+    marginLeft: 280,
     padding: 10,
     borderRadius: 7
   },
@@ -165,7 +165,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#00FF7F',
     width: 70,
     marginTop: -36,
-    marginLeft: 230,
+    marginLeft: 280,
     padding: 10,
     borderRadius: 7
   },
@@ -183,7 +183,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFD700',
     width: 70,
     marginTop: -37,
-    marginLeft: 230,
+    marginLeft: 280,
     marginBottom: -20,
     padding: 10,
     borderRadius: 7
@@ -194,11 +194,11 @@ const styles = StyleSheet.create({
     width: 200,
     alignSelf: 'center',
     padding: 10,
-    marginTop: 70,
+    marginTop: 100,
     borderRadius: 7
   },
   
-  texto21:{
+  texto5:{
     color: '#585858'
   }
 });

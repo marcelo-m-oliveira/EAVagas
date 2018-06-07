@@ -26,8 +26,7 @@ public class Pessoa {
 		return email;
 	}
 	
-	public void setSenha() {
-		
+	public void setSenha() {	
 	}
 	
 	public String getSenha() {
@@ -42,8 +41,7 @@ public class Pessoa {
 		return telefone;
 	}
 	
-	public void setTelefone() { 
-		     
+	public void setTelefone() {   
 	 } 
 	 
 	 public Veiculo[] getAutomovel() { 
@@ -52,5 +50,9 @@ public class Pessoa {
 	 
 	 public CartaoCredito[] getCartao() { 
 	    return cartao; 
+	 }
+	 
+	 public void reservarVaga() {
+		 
 	 }
 }
