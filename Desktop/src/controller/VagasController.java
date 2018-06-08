@@ -5,7 +5,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.shape.Circle;
 
-public class Vagas {
+public class VagasController {
 
     @FXML
     private Button ButtonVoltar;

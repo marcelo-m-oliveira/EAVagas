@@ -14,13 +14,13 @@ public class LoginController {
 	private PasswordField PasswordFieldSenha;
 
 	// Carrega a tela de cadastro de usuário. Chamado pelo botão 'Cadastre-se'
-	public void carregarTelaCadastroUsuario(ActionEvent event) {
-		TelaController.carregarTela(event, "/application/TelaCadastroUsuario.fxml", CadastroController.tituloTelaCadastroUsuario);
+	public void FazerCadastro(ActionEvent event) {
+		TelaController.carregarTela(event, "/application/Cadastro.fxml", CadastroDadosPessoaisController.tituloTelaCadastroUsuario);
 	}
 
 	// Autentica usuário, e em caso de sucesso, carrega a tela de compra de produto.
 	// Chamado pelo botão 'Entrar'
-	public void fazerLogin(ActionEvent event) {
+	public void FazerLogin(ActionEvent event) {
 		if (UsuarioController.autenticarUsuario(TextFieldEmail.getText(), PasswordFieldSenha.getText())) {
 			TelaController.exibirJanela(AlertType.INFORMATION, LoginController.tituloTelaInicial, "Operação realizada!",
 					"Login realizado com sucesso! Nome: " + TextFieldEmail.getText());
