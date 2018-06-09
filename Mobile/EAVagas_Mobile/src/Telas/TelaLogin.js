@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Alert, Platform, StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ImageBackground} from 'react-native';
+import {Alert, Platform, StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ImageBackground, TouchableHighlight} from 'react-native';
 
 import BotaoVoltar from './BotaoVoltar'
 import TelaCadastro from './TelaCadastro'
@@ -21,7 +21,7 @@ export default class App extends Component {
             </TouchableHighlight>
             <TouchableHighlight style = {styles.botao1} 
             onPress = {()=>{this.props.navigator.push({id:'TelaCadastro'})}}>
-              <Text style = {styles.textoBotao}> Login </Text>
+              <Text style = {styles.textoBotao}> Cadastrar </Text>
             </TouchableHighlight>
             <TouchableOpacity>
               <Text style = {styles.textobotlink}> Esqueceu seu email ou senha? </Text>

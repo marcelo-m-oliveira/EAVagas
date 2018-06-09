@@ -37,9 +37,43 @@ export default class App extends Component {
               <TelaCadastro navigator = {navigator}/>
             );
           }
+          else if(route.id === 'DadosVeiculo'){
+            return(
+              <TelaCadastroVeiculo navigator = {navigator}/>
+            );
+          }
+          else if(route.id === 'DadosCartao'){
+            return(
+              <TelaFacaCartao navigator = {navigator}/>
+            );
+          }
+          else if(route.id === 'CadastrarCartao'){
+            return(
+              <TelaCadastroCartao navigator = {navigator}/>
+            );
+          }
+          if(route.id === 'TelaHome1'){
+            return(
+              <TelaHome navigator = {navigator}/>
+            );
+         }
+         else if(route.id === 'Preferencias'){
+          return(
+            <TelaPreferencias navigator = {navigator}/>
+          );
+        }
+        else if(route.id === 'TelaPerfil'){
+          return(
+            <TelaPerfil navigator = {navigator}/>
+          );
+        }
+        else if (route.id === 'TelaVagas'){
+          return(
+            <TelaVagas navigator = {navigator}/>
+          )
+        }
         }}
       />
-
     );
   }
 };

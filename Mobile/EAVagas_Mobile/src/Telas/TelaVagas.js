@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Alert, Platform, StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ImageBackground} from 'react-native';
+import {Alert, Platform, StyleSheet, Text, View, Image, TouchableOpacity, TouchableHighlight, TextInput, ImageBackground} from 'react-native';
 
 
 
@@ -9,9 +9,9 @@ export default class App extends Component {
     return (
       <View style={styles.fundo}>
           <View>  
-          <TouchableOpacity style = {styles.botao}>
-              <Text style = {styles.textoBotao}> Voltar </Text>
-            </TouchableOpacity>
+          <TouchableHighlight style={styles.botao} onPress = {()=>{this.props.navigator.push({id:'TelaHome1'})}}>
+        <Text style={styles.textoBotao}> Voltar </Text>
+          </TouchableHighlight>
           <Text style={styles.texto}>Estacionamento Perdigão</Text>
           <Text style={styles.texto1}>Escolha sua vaga</Text>
           <Text style={styles.texto2}>★ <Text style={styles.texto5}>Disponível</Text></Text>
@@ -51,9 +51,9 @@ export default class App extends Component {
               <Text style = {styles.textoBotao}> H </Text>
             </TouchableOpacity>
             
-            <TouchableOpacity style = {styles.botao9}>
-              <Text style = {styles.textoBotao}> Cancelar </Text>
-            </TouchableOpacity>
+            <TouchableHighlight style={styles.botao9} onPress = {()=>{this.props.navigator.push({id:'TelaHome1'})}}>
+        <Text style={styles.textoBotao}> Cancelar </Text>
+          </TouchableHighlight>
       
           </View>
       </View>
@@ -64,7 +64,7 @@ export default class App extends Component {
 const styles = StyleSheet.create({
 
   texto:{
-    marginTop: 50,
+    marginTop: 30,
     color: '#585858',
     fontSize: 27,
     textAlign: 'center',

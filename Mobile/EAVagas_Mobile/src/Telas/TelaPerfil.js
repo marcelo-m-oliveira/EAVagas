@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Alert, Platform, StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ImageBackground} from 'react-native';
+import {Alert, Platform, StyleSheet, Text, View, Image, TouchableOpacity, TouchableHighlight, TextInput, ImageBackground} from 'react-native';
 
 
 
@@ -9,9 +9,9 @@ export default class App extends Component {
     return (
       <View style={styles.fundo}>
           <View>  
-          <TouchableOpacity style = {styles.botao1}>
-              <Text style = {styles.textoBotao}> Voltar </Text>
-            </TouchableOpacity>
+          <TouchableHighlight style={styles.botao1} onPress = {()=>{this.props.navigator.push({id:'Preferencias'})}}>
+        <Text style={styles.textoBotao}> Voltar </Text>
+          </TouchableHighlight>
           
           <Text style={styles.texto}>Perfil</Text>
           <Image style = {styles.imagem} source = {require("./imagens/perfil.png")}/>
@@ -19,12 +19,9 @@ export default class App extends Component {
           <Text style={styles.texto2}>Nome: Jubileu Junior</Text>
           <Text style={styles.texto3}>Veículo: Carro FRD-3425</Text>
           <Text style={styles.texto3}>Estac. Preferido: Perdigão</Text>
-            
-            <TouchableOpacity style = {styles.botao}>
-              <Text style = {styles.textoBotao}> Sair do App </Text>
-            </TouchableOpacity>
-            
-      
+          <TouchableHighlight style={styles.botao} onPress = {()=>{this.props.navigator.push({id:'TelaLogin'})}}>
+          <Text style = {styles.textoBotao}> Sair do App </Text>
+          </TouchableHighlight>   
           </View>
       </View>
     );

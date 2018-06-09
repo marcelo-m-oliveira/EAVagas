@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Alert, Platform, StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ImageBackground} from 'react-native';
+import {Alert, Platform, StyleSheet, Text, View, Image, TouchableOpacity, TouchableHighlight, TextInput, ImageBackground} from 'react-native';
 
 
 
@@ -9,15 +9,15 @@ export default class App extends Component {
     return(
       <View style={styles.fundo}>
         <View>
-        <TouchableOpacity style={styles.botao1}>
-          <Text style={styles.textoBotao1}> Voltar </Text>
-        </TouchableOpacity>
+        <TouchableHighlight style={styles.botao1} onPress = {()=>{this.props.navigator.push({id:'TelaHome1'})}}>
+        <Text style={styles.textoBotao1}> Voltar </Text>
+          </TouchableHighlight>
         
         <Text style={styles.texto}>Preferências</Text>
         
-        <TouchableOpacity style={styles.botao2}>
-          <Text style={styles.textoBotao2}> Conta </Text>
-        </TouchableOpacity>
+        <TouchableHighlight style={styles.botao2} onPress = {()=>{this.props.navigator.push({id:'TelaPerfil'})}}>
+        <Text style={styles.textoBotao2}> Perfil </Text>
+          </TouchableHighlight>
         
         <TouchableOpacity style={styles.botao2}>
           <Text style={styles.textoBotao2}> Notificações </Text>
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },
   botao1:{
-    marginTop: 60,
+    marginTop: 15,
     backgroundColor: "#DA0505",
     width: 70,
     marginLeft: 15,

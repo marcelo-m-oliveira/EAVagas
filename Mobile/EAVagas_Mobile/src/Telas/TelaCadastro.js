@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Alert, Platform, StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ImageBackground} from 'react-native';
+import {Alert, Platform, StyleSheet, Text, View, Image, TouchableOpacity, TouchableHighlight, TextInput, ImageBackground} from 'react-native';
 
 
 
@@ -9,8 +9,8 @@ export default class App extends Component {
     return (
       <View style={styles.fundo}>
           <View>
-          <TouchableHighlight style={styles.botao1} onPress = {()=>{this.props.navigator.push({id:'b'})}}>
-              <Text> Voltar </Text>
+          <TouchableHighlight style={styles.botao1} onPress = {()=>{this.props.navigator.push({id:'TelaLogin'})}}>
+              <Text style = {styles.textoBotao1}> Voltar </Text>
           </TouchableHighlight>
           <Text style={styles.texto}>Crie a sua conta</Text>
           <Text style={styles.texto1}>Dados pessoais</Text>
@@ -21,9 +21,10 @@ export default class App extends Component {
             <TextInput style = {styles.campotext1} placeholder = "Email"/>
             <TextInput password={true} style={styles.campotext1} placeholder = "Senha"/>
             <TextInput password={true} style={styles.campotext1} placeholder = "Confirme a senha"/>
-            <TouchableOpacity style = {styles.botao}>
-              <Text style = {styles.textoBotao}> Próximo </Text>
-            </TouchableOpacity>
+            <TouchableHighlight style={styles.botao} onPress = {()=>{this.props.navigator.push({id:'DadosVeiculo'})}}>
+            <Text style = {styles.textoBotao}> Próximo </Text>
+          </TouchableHighlight>
+              
           </View>
       </View>
     );
@@ -79,6 +80,11 @@ const styles = StyleSheet.create({
     padding: 10,
     marginTop: 25,
     borderRadius: 10
+  },
+  textoBotao1:{
+    color: '#FFFFFF',
+    fontSize: 13,
+    alignSelf: 'center'
   },
   textoBotao:{
     color: '#FFFFFF',

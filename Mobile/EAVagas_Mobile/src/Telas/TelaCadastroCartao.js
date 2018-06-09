@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
-import {StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ImageBackground, Picker} from 'react-native';
-
-
+import {StyleSheet, Text, View, Image, TouchableOpacity, TouchableHighlight, TextInput, ImageBackground, Picker} from 'react-native';
 
 export default class App extends Component {
   
   render() {
     return (
       <View style={styles.fundo}>
-          <View>                  
+          <View>
           <Text style={styles.texto}>Insira o número do seu cartão de crédito</Text>
             <TextInput style = {styles.campotext} placeholder = "Número do cartão"/>
             <TextInput style = {styles.campotext1} placeholder = "Data de vencimento"/>
             <TextInput style = {styles.campotext1} placeholder = "Código de segurança"/>
-            <TouchableOpacity style = {styles.botao}>
-              <Text style = {styles.textoBotao}>Confirmar</Text>
-            </TouchableOpacity>
+            <TouchableHighlight style = {styles.botao} onPress = {()=>{this.props.navigator.push({id:'TelaHome'})}}>
+               <Text style = {styles.textoBotao}>Confirmar</Text>
+           </TouchableHighlight>
           </View>
       </View>
     );

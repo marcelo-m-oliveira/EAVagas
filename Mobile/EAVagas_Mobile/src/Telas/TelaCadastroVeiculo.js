@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import {StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ImageBackground, Picker} from 'react-native';
-
-
+import {StyleSheet, Text, View, Image, TouchableOpacity, TouchableHighlight, TextInput, ImageBackground, Picker} from 'react-native';
 
 export default class App extends Component {
   
@@ -16,9 +14,9 @@ export default class App extends Component {
             <Picker.Item label="Carro" value = "Carro"/>
             <Picker.Item label="Moto" value="Moto"/>
             </Picker>
-            <TouchableOpacity style = {styles.botao}>
-              <Text style = {styles.textoBotao}> Próximo </Text>
-            </TouchableOpacity>
+            <TouchableHighlight style={styles.botao} onPress = {()=>{this.props.navigator.push({id:'DadosCartao'})}}>
+            <Text style = {styles.textoBotao}> Próximo </Text>
+          </TouchableHighlight>
           </View>
       </View>
     );

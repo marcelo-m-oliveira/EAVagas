@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Alert, Platform, StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ImageBackground} from 'react-native';
+import {Alert, Platform, StyleSheet, Text, View, Image, TouchableOpacity, TouchableHighlight, TextInput, ImageBackground} from 'react-native';
 
 
 
@@ -12,13 +12,13 @@ export default class App extends Component {
           <Text style={styles.texto}>Cadastre seu Cartão de Crédito!</Text>
           <Text style={styles.texto1}>Reservar sua vaga fica ainda mais fácil com um pagamento antecipado! Fique tranquilo, não abriremos mão da sua vaga até que cancele o pagamento.</Text>
             
-            <TouchableOpacity style = {styles.botao}>
-              <Text style = {styles.textoBotao}> Eu topo </Text>
-            </TouchableOpacity>
+          <TouchableHighlight style={styles.botao} onPress = {()=>{this.props.navigator.push({id:'CadastrarCartao'})}}>
+          <Text style = {styles.textoBotao}> Eu topo </Text>
+          </TouchableHighlight>
             
-            <TouchableOpacity style = {styles.botao2}>
-              <Text style = {styles.textoBotao2}> Vou pensar </Text>
-            </TouchableOpacity>
+          <TouchableHighlight style={styles.botao2} onPress = {()=>{this.props.navigator.push({id:'TelaHome'})}}>
+          <Text style = {styles.textoBotao2}> Vou pensar </Text>
+          </TouchableHighlight>
           </View>
       </View>
     );
