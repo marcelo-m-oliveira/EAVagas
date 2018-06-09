@@ -8,7 +8,10 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.fundo}>
-          <View>           
+          <View>
+          <TouchableHighlight style={styles.botao1} onPress = {()=>{this.props.navigator.push({id:'b'})}}>
+              <Text> Voltar </Text>
+          </TouchableHighlight>
           <Text style={styles.texto}>Crie a sua conta</Text>
           <Text style={styles.texto1}>Dados pessoais</Text>
             <TextInput style = {styles.campotext} placeholder = "Nome"/>
@@ -29,6 +32,14 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
 
+  botao1:{
+    backgroundColor: '#DA0505',
+    width: 70,
+    marginTop: 10,
+    marginLeft: 15,
+    padding: 10,
+    borderRadius: 7
+  },
   texto:{
     marginTop: 20,
     color: '#585858',

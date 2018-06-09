@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import {Alert, Platform, StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ImageBackground} from 'react-native';
 
+import BotaoVoltar from './BotaoVoltar'
+import TelaCadastro from './TelaCadastro'
+import TelaHome from './TelaHome'
 
 
 export default class App extends Component {
@@ -8,16 +11,18 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.fundo}>
-          <View>          
-            <Image style = {styles.imagem} source = {require("./imagens/logo.png")}/>    
+      <Image style = {styles.imagem} source = {require("./imagens/logo.png")}/>
+          <View>              
             <TextInput style = {styles.campotext} placeholder = "Digite o seu email" />
             <TextInput style = {styles.campotext1} placeholder = "Digite a sua senha" />
-            <TouchableOpacity style = {styles.botao}>
-              <Text style = {styles.textoBotao}> Entrar </Text>
-            </TouchableOpacity>
-            <TouchableOpacity style = {styles.botao1}>
-              <Text style = {styles.textoBotao}> Cadastrar </Text>
-            </TouchableOpacity>
+            <TouchableHighlight style = {styles.botao} 
+            onPress = {()=>{this.props.navigator.push({id:'TelaHome'})}}>
+              <Text style = {styles.textoBotao}> Login </Text>
+            </TouchableHighlight>
+            <TouchableHighlight style = {styles.botao1} 
+            onPress = {()=>{this.props.navigator.push({id:'TelaCadastro'})}}>
+              <Text style = {styles.textoBotao}> Login </Text>
+            </TouchableHighlight>
             <TouchableOpacity>
               <Text style = {styles.textobotlink}> Esqueceu seu email ou senha? </Text>
             </TouchableOpacity>
