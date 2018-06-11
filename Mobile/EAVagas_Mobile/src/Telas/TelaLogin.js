@@ -23,10 +23,10 @@ export default class App extends Component {
             onPress = {()=>{this.props.navigator.push({id:'TelaCadastro'})}}>
               <Text style = {styles.textoBotao}> Cadastrar </Text>
             </TouchableHighlight>
-            <TouchableOpacity>
+            <TouchableHighlight
+            onPress = {()=>{this.props.navigator.push({id:'TelaRedefinir'})}}>
               <Text style = {styles.textobotlink}> Esqueceu seu email ou senha? </Text>
-            </TouchableOpacity>
-
+            </TouchableHighlight>
           </View>
       </View>
     );

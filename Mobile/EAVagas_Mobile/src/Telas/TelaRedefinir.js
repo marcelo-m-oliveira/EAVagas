@@ -7,18 +7,13 @@ export default class App extends Component {
     return (
       <View style={styles.fundo}>
           <View>                  
-          <TouchableHighlight style={styles.botao1} onPress = {()=>{this.props.navigator.push({id:'TelaCadastro'})}}>
+          <TouchableHighlight style={styles.botao1} onPress = {()=>{this.props.navigator.push({id:'TelaLogin'})}}>
               <Text style = {styles.textoBotao1}> Voltar </Text>
           </TouchableHighlight>
-          <Text style={styles.texto}>Dados do veículo</Text>
-            <TextInput style = {styles.campotext} placeholder = "Placa do veículo"/>
-            <Picker style = {styles.botao}>
-            <Picker.Item label="Selecione o tipo do seu veículo" value = ""/>
-            <Picker.Item label="Carro" value = "Carro"/>
-            <Picker.Item label="Moto" value="Moto"/>
-            </Picker>
-            <TouchableHighlight style={styles.botao} onPress = {()=>{this.props.navigator.push({id:'DadosCartao'})}}>
-            <Text style = {styles.textoBotao}> Próximo </Text>
+          <Text style={styles.texto}>Redefinição de senha</Text>
+            <TextInput style = {styles.campotext} placeholder = "Email que deseja recuperar"/>
+            <TouchableHighlight style={styles.botao} onPress = {()=>{this.props.navigator.push({id:'TelaLogin'})}}>
+            <Text style = {styles.textoBotao}> Enviar </Text>
           </TouchableHighlight>
           </View>
       </View>
@@ -32,8 +27,8 @@ const styles = StyleSheet.create({
     color: '#000000',
     fontSize: 30,
     alignSelf: 'center',
-    marginTop: 90,
-    marginBottom: 90,
+    marginTop: 100,
+    marginBottom: 50,
     fontWeight: 'bold'
   }, 
   botao1:{
@@ -54,7 +49,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white'
   },
   campotext:{
-    marginTop: 18,
+    marginTop: 30,
     backgroundColor: '#F2F2F2',
     width: 300,
     alignSelf: 'center',
@@ -66,7 +61,7 @@ const styles = StyleSheet.create({
     width: 300,
     alignSelf: 'center',
     padding: 10,
-    marginTop: 25,
+    marginTop: 40,
     borderRadius: 7,
   },
   textoBotao:{
