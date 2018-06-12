@@ -13,7 +13,7 @@ export default class App extends Component {
           <Text style={styles.texto}>Dados do veículo</Text>
             <TextInput style = {styles.campotext} placeholder = "Placa do veículo"/>
             <Picker style = {styles.botao}>
-            <Picker.Item label="Selecione o tipo do seu veículo" value = ""/>
+            <Picker.Item label= "Selecione o tipo do seu veículo" value = ""/>
             <Picker.Item label="Carro" value = "Carro"/>
             <Picker.Item label="Moto" value="Moto"/>
             </Picker>

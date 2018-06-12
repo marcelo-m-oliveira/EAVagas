@@ -44,6 +44,10 @@ const styles = StyleSheet.create({
     marginBottom: 50,
     fontWeight: 'bold'
   },
+  fundo:{
+    flex: 1, 
+    backgroundColor: 'white'
+  },
   botao1:{
     marginTop: 15,
     backgroundColor: "#DA0505",

@@ -38,6 +38,10 @@ const styles = StyleSheet.create({
     marginBottom: 50,
     fontWeight: 'bold'
   },
+  fundo:{
+    flex: 1, 
+    backgroundColor: 'white'
+  },
   imagem1 : {
     marginTop: -35,
     marginLeft: 370,
