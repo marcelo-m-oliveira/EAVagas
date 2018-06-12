@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Alert, Platform, StyleSheet, Text, View, Image, TouchableOpacity, TouchableHighlight, TextInput, ImageBackground} from 'react-native';
+import {Alert, Platform, StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ImageBackground, TouchableHighlight} from 'react-native';
 
 
 
@@ -9,19 +9,20 @@ export default class App extends Component {
     return (
       <View style={styles.fundo}>
           <View>  
-          <TouchableHighlight style={styles.botao} onPress = {()=>{this.props.navigator.push({id:'TelaHome1'})}}>
-        <Text style={styles.textoBotao}> Voltar </Text>
-          </TouchableHighlight>
+          <TouchableOpacity style = {styles.botao}>
+              <Text style = {styles.textoBotao}> Voltar </Text>
+            </TouchableOpacity>
           <Text style={styles.texto}>Estacionamento Perdigão</Text>
           <Text style={styles.texto1}>Escolha sua vaga</Text>
-          <Text style={styles.texto2}>★ <Text style={styles.texto5}>Disponível</Text></Text>
-          <Text style={styles.texto3}>★ <Text style={styles.texto5}>Reservado</Text></Text>
-          <Text style={styles.texto4}>★ <Text style={styles.texto5}>Ocupado</Text></Text>
+          <Text style={styles.texto2}>★ <Text style={styles.texto21}>Disponível</Text></Text>
+          <Text style={styles.texto3}>★ <Text style={styles.texto21}>Reservado</Text></Text>
+          <Text style={styles.texto4}>★ <Text style={styles.texto21}>Ocupado</Text></Text>
           
             
-            <TouchableOpacity style = {styles.botao1}>
+            <TouchableHighlight style = {styles.botao1}
+              onPress = {Alert.alert('Vaga reservada!')}>
               <Text style = {styles.textoBotao}> A </Text>
-            </TouchableOpacity>
+            </TouchableHighlight>
             
             <TouchableOpacity style = {styles.botao2}>
               <Text style = {styles.textoBotao}> B </Text>
@@ -51,9 +52,9 @@ export default class App extends Component {
               <Text style = {styles.textoBotao}> H </Text>
             </TouchableOpacity>
             
-            <TouchableHighlight style={styles.botao9} onPress = {()=>{this.props.navigator.push({id:'TelaHome1'})}}>
-        <Text style={styles.textoBotao}> Cancelar </Text>
-          </TouchableHighlight>
+            <TouchableOpacity style = {styles.botao9}>
+              <Text style = {styles.textoBotao}> Cancelar </Text>
+            </TouchableOpacity>
       
           </View>
       </View>
@@ -97,7 +98,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     marginTop: -51,
     marginBottom: 10,
-    marginLeft: 300
+    marginLeft: 260
   },
   fundo:{
     flex: 1, 
@@ -108,7 +109,7 @@ const styles = StyleSheet.create({
     width: 70,
     marginLeft: 15,
     padding: 10,
-    marginTop: 10,
+    marginTop: 50,
     borderRadius: 7
   },
   textoBotao:{
@@ -129,7 +130,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#00FF7F',
     width: 70,
     marginTop: -37,
-    marginLeft: 280,
+    marginLeft: 230,
     padding: 10,
     borderRadius: 7
   },
@@ -147,7 +148,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#B22222',
     width: 70,
     marginTop: -37,
-    marginLeft: 280,
+    marginLeft: 230,
     padding: 10,
     borderRadius: 7
   },
@@ -165,7 +166,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#00FF7F',
     width: 70,
     marginTop: -36,
-    marginLeft: 280,
+    marginLeft: 230,
     padding: 10,
     borderRadius: 7
   },
@@ -183,7 +184,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFD700',
     width: 70,
     marginTop: -37,
-    marginLeft: 280,
+    marginLeft: 230,
     marginBottom: -20,
     padding: 10,
     borderRadius: 7
@@ -194,11 +195,11 @@ const styles = StyleSheet.create({
     width: 200,
     alignSelf: 'center',
     padding: 10,
-    marginTop: 100,
+    marginTop: 70,
     borderRadius: 7
   },
   
-  texto5:{
+  texto21:{
     color: '#585858'
   }
 });
