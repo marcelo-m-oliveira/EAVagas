@@ -19,13 +19,13 @@ export default class App extends Component {
         <Text style={styles.textoBotao2}> Perfil </Text>
           </TouchableHighlight>
         
-        <TouchableOpacity style={styles.botao2}>
+        <TouchableHighlight style={styles.botao2} onPress = {()=>{this.props.navigator.push({id:'TelaNotificacoes'})}}>
           <Text style={styles.textoBotao2}> Notificações </Text>
-        </TouchableOpacity>
+        </TouchableHighlight>
         
-        <TouchableOpacity style={styles.botao2}>
+        <TouchableHighlight style={styles.botao2} onPress = {()=>{this.props.navigator.push({id:'TelaAjuda'})}}>
           <Text style={styles.textoBotao2}> Ajuda </Text>
-        </TouchableOpacity>
+        </TouchableHighlight>
         
         </View>
       </View>

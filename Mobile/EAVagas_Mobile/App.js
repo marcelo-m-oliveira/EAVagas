@@ -13,6 +13,8 @@ import TelaPerfil from './src/Telas/TelaPerfil'
 import TelaPreferencias from './src/Telas/TelaPreferencias'
 import TelaVagas from './src/Telas/TelaVagas'
 import TelaRedefinir from './src/Telas/TelaRedefinir'
+import TelaNotificacoes from './src/Telas/TelaNotificacoes'
+import telaAjuda from '.src/Telas/telaAjuda'
 import { Navigator } from 'react-native-deprecated-custom-components'
 
 export default class App extends Component { 
@@ -77,6 +79,16 @@ export default class App extends Component {
           return(
             <TelaVagas navigator = {navigator}/>
           )
+        }
+        else if (route.id === 'TelaNotificacoes'){
+          return(
+            <TelaNotificacoes navigator = {navigator}/>
+            )
+        }
+        else if (route.id === 'TelaAjuda'){
+          return(
+            <TelaAjuda navigator = {navigator}/>
+            )
         }
         }}
       />

@@ -19,9 +19,10 @@ export default class App extends Component {
           <Text style={styles.texto4}>★ <Text style={styles.texto5}>Ocupado</Text></Text>
           
             
-            <TouchableOpacity style = {styles.botao1}>
+            <TouchableHighlight style = {styles.botao1}
+              onPress = {Alert.alert('Vaga reservada!')}>
               <Text style = {styles.textoBotao}> A </Text>
-            </TouchableOpacity>
+            </TouchableHighlight>
             
             <TouchableOpacity style = {styles.botao2}>
               <Text style = {styles.textoBotao}> B </Text>
