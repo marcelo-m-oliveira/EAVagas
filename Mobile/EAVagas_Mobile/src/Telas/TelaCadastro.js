@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   },
   texto:{
     marginTop: 20,
-    color: '#585858',
+    color: '#000000',
     fontSize: 24,
     alignSelf: 'center',
     margin: 15,

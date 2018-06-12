@@ -12,6 +12,7 @@ import TelaLogin from './src/Telas/TelaLogin'
 import TelaPerfil from './src/Telas/TelaPerfil'
 import TelaPreferencias from './src/Telas/TelaPreferencias'
 import TelaVagas from './src/Telas/TelaVagas'
+import TelaRedefinir from './src/Telas/TelaRedefinir'
 import { Navigator } from 'react-native-deprecated-custom-components'
 
 export default class App extends Component { 
@@ -25,6 +26,11 @@ export default class App extends Component {
           if(route.id === 'TelaLogin'){
             return(
               <TelaLogin navigator = {navigator}/>
+            );
+          }
+          else if(route.id === 'TelaRedefinir'){
+            return(
+              <TelaRedefinir navigator = {navigator}/>
             );
           }
           else if(route.id === 'TelaHome'){

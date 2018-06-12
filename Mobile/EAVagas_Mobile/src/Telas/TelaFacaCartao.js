@@ -8,7 +8,10 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.fundo}>
-          <View>           
+          <View>        
+          <TouchableHighlight style={styles.botao1} onPress = {()=>{this.props.navigator.push({id:'DadosVeiculo'})}}>
+              <Text style = {styles.textoBotao1}> Voltar </Text>
+          </TouchableHighlight>   
           <Text style={styles.texto}>Cadastre seu Cartão de Crédito!</Text>
           <Text style={styles.texto1}>Reservar sua vaga fica ainda mais fácil com um pagamento antecipado! Fique tranquilo, não abriremos mão da sua vaga até que cancele o pagamento.</Text>
             
@@ -29,12 +32,25 @@ const styles = StyleSheet.create({
 
   texto:{
     marginTop: 100,
-    color: '#585858',
+    color: '#000000',
     fontSize: 30,
     textAlign: 'center',
     marginBottom: 20,
     fontWeight: 'bold'
   }, 
+  botao1:{
+    backgroundColor: '#DA0505',
+    width: 70,
+    marginTop: 10,
+    marginLeft: 15,
+    padding: 10,
+    borderRadius: 7
+  },
+  textoBotao1:{
+    color: '#FFFFFF',
+    fontSize: 13,
+    alignSelf: 'center'
+  },
   texto1:{
     color: '#585858',
     fontSize: 15,

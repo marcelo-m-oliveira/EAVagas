@@ -65,8 +65,8 @@ export default class App extends Component {
 const styles = StyleSheet.create({
 
   texto:{
-    marginTop: 20,
-    color: '#585858',
+    marginTop: 30,
+    color: '#000000',
     fontSize: 27,
     textAlign: 'center',
     marginBottom: 5,
