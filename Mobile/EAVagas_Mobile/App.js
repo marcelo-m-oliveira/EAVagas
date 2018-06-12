@@ -14,7 +14,7 @@ import TelaPreferencias from './src/Telas/TelaPreferencias'
 import TelaVagas from './src/Telas/TelaVagas'
 import TelaRedefinir from './src/Telas/TelaRedefinir'
 import TelaNotificacoes from './src/Telas/TelaNotificacoes'
-import telaAjuda from '.src/Telas/telaAjuda'
+import TelaAjuda from '.src/Telas/TelaAjuda'
 import { Navigator } from 'react-native-deprecated-custom-components'
 
 export default class App extends Component { 
