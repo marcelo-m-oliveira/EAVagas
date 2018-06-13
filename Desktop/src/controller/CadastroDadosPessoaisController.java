@@ -18,15 +18,17 @@ public class CadastroDadosPessoaisController {
 	@FXML private TextField textFieldCadastroEmail;
 
 	// Cadastra um novo usuário no sistema. Chamado pelo botão 'Ok'
-	public void cadastrarUsuario(ActionEvent event) {
-		if (UsuarioController.cadastrarUsuario(textFieldNome.getText(), textFielSobrenome.getText(),
-				textFieldCPF.getText(), textFieldTelefone.getText(), passwordFieldCadastroSenha.getText(),
-				passwordFieldConfirmeSenha.getText(), textFieldCadastroEmail.getText())) {
-			TelaController.exibirJanela(AlertType.INFORMATION, CadastroDadosPessoaisController.tituloTelaCadastroUsuario, "Operação realizada",
-					"Novo usuário cadastrado com sucesso! Nome: " + textFieldCadastroEmail.getText());
-			TelaController.carregarTela(event, "/application/DadosVeiculo.fxml", DadosVeiculoController.tituloDadosVeiculo);
-			limparCamposCadastro();
-		} else {
+	public void CadastrarDadosPessoais(ActionEvent event) {
+    	if (UsuarioController.cadastrarUsuario(textFieldNome.getText(),textFielSobrenome.getText(),
+    			textFieldCPF.getText(), textFieldTelefone.getText(),
+    			textFieldCadastroEmail.getText(), passwordFieldCadastroSenha.getText(), 
+    			passwordFieldConfirmeSenha.getText())) {
+		TelaController.exibirJanela(AlertType.INFORMATION, CadastroDadosPessoaisController.tituloTelaCadastroUsuario,
+				"Operação realizada", "Novo usuário cadastrado com sucesso! Usuário: " + textFieldCadastroEmail.getText());
+		limparCamposCadastro();
+		TelaController.carregarTela(event, "/application/DadosVeiculo.fxml", DadosVeiculoController.tituloDadosVeiculo);
+	}  else {
+			
 			TelaController.exibirJanela(AlertType.ERROR, CadastroDadosPessoaisController.tituloTelaCadastroUsuario, "Erro!",
 					"Não foi possível cadastrar novo usuário, verifique os dados informados e tente novamente.");
 			limparCamposCadastro();

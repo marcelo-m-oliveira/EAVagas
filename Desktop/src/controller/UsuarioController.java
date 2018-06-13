@@ -12,7 +12,7 @@ public class UsuarioController {
 	public static boolean cadastrarUsuario(String nome, String sobrenome, String cpf, String telefone, String senha,
 			String confirmaSenha, String email) {
 		if (camposPreenchidos(nome, sobrenome, cpf, telefone, senha, email, confirmaSenha)) {
-			return conjuntoUsuarios.add(new Pessoa(nome, cpf, telefone, senha, email));
+			return conjuntoUsuarios.add(new Pessoa(nome, cpf, sobrenome, telefone, senha, email, confirmaSenha));
 		} else {
 			return false;
 		}
