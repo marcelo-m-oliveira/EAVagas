@@ -9,22 +9,22 @@ import javafx.scene.control.TextField;
 public class CadastroDadosPessoaisController {
 
 	public static final String tituloTelaCadastroUsuario = "Cadastro de Usuário"; // título exibido na barra superior da tela
-	@FXML private TextField textFieldNome;
-	@FXML private TextField textFielSobrenome;
-	@FXML private TextField textFieldCPF;
-	@FXML private TextField textFieldTelefone;
-	@FXML private PasswordField passwordFieldCadastroSenha;
-	@FXML private PasswordField passwordFieldConfirmeSenha;
-	@FXML private TextField textFieldCadastroEmail;
+	@FXML private TextField TextFieldNome;
+	@FXML private TextField TextFielSobrenome;
+	@FXML private TextField TextFieldCPF;
+	@FXML private TextField TextFieldTelefone;
+	@FXML private PasswordField PasswordFieldSenha;
+	@FXML private PasswordField PasswordFieldConfirmeSenha;
+	@FXML private TextField TextFieldEmail;
 
 	// Cadastra um novo usuário no sistema. Chamado pelo botão 'Ok'
 	public void CadastrarDadosPessoais(ActionEvent event) {
-    	if (UsuarioController.cadastrarUsuario(textFieldNome.getText(),textFielSobrenome.getText(),
-    			textFieldCPF.getText(), textFieldTelefone.getText(),
-    			textFieldCadastroEmail.getText(), passwordFieldCadastroSenha.getText(), 
-    			passwordFieldConfirmeSenha.getText())) {
+    	if (UsuarioController.cadastrarUsuario(TextFieldNome.getText(),TextFielSobrenome.getText(),
+    			TextFieldCPF.getText(), TextFieldTelefone.getText(),
+    			PasswordFieldSenha.getText(), PasswordFieldConfirmeSenha.getText(),
+    			TextFieldEmail.getText())) {
 		TelaController.exibirJanela(AlertType.INFORMATION, CadastroDadosPessoaisController.tituloTelaCadastroUsuario,
-				"Operação realizada", "Novo usuário cadastrado com sucesso! Usuário: " + textFieldCadastroEmail.getText());
+				"Operação realizada", "Novo usuário cadastrado com sucesso! Usuário: " + TextFieldEmail.getText());
 		limparCamposCadastro();
 		TelaController.carregarTela(event, "/application/DadosVeiculo.fxml", DadosVeiculoController.tituloDadosVeiculo);
 	}  else {
@@ -42,13 +42,13 @@ public class CadastroDadosPessoaisController {
 
 	// Limpa todos os campos de cadastro. Chamado internamente por outros métodos
 	private void limparCamposCadastro() {
-		textFieldNome.clear();
-		textFielSobrenome.clear();
-		textFieldCPF.clear();
-		textFieldTelefone.clear();
-		textFieldCadastroEmail.clear();
-		passwordFieldCadastroSenha.clear();
-		passwordFieldConfirmeSenha.clear();
+		TextFieldNome.clear();
+		TextFielSobrenome.clear();
+		TextFieldCPF.clear();
+		TextFieldTelefone.clear();
+		TextFieldEmail.clear();
+		PasswordFieldSenha.clear();
+		PasswordFieldConfirmeSenha.clear();
 	}
 
 }
