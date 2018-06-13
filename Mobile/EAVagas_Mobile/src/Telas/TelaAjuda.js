@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Alert, Platform, StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ImageBackground, TouchableHighlight, Switch} from 'react-native';
+import {Alert, Platform, StyleSheet, Text, View, Image, TouchableHighlight, TextInput, ImageBackground, Switch} from 'react-native';
 
 
 
@@ -9,7 +9,7 @@ export default class App extends Component {
     return(
       <View style={styles.fundo}>
         <View>
-        <TouchableHighlight style={styles.botao1} onPress = {()=>{this.props.navigator.push({id:'TelaHome1'})}}>
+        <TouchableHighlight style={styles.botao1} onPress = {()=>{this.props.navigator.push({id:'Preferencias'})}}>
         <Text style={styles.textoBotao1}> Voltar </Text>
           </TouchableHighlight>
         
@@ -48,10 +48,10 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
   botao1:{
-    marginTop: 60,
-    backgroundColor: "#DA0505",
+    backgroundColor: '#DA0505',
     width: 70,
-    marginLeft: 15,
+    marginLeft: -15,
+    marginTop: 15,
     padding: 10,
     borderRadius: 7
   },
@@ -59,9 +59,5 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontSize: 13,
     alignSelf: 'center'
-  },
-
- 
-  
-  
+  } 
 });

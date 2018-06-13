@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Alert, Platform, StyleSheet, Text, View, Image, TouchableOpacity, TouchableHighlight, TextInput, ImageBackground} from 'react-native';
+import {Alert, Platform, StyleSheet, Text, View, Image, TouchableHighlight, TextInput, ImageBackground} from 'react-native';
 
 
 

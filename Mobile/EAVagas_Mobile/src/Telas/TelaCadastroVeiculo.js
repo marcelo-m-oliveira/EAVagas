@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import {StyleSheet, Text, View, Image, TouchableOpacity, TouchableHighlight, TextInput, ImageBackground, Picker} from 'react-native';
+import {StyleSheet, Text, View, TouchableHighlight, TextInput, ImageBackground, Picker} from 'react-native';
 
-export default class App extends Component {
-  
+export default class PickerExample extends Component {
+  state = {user: ''}
+  updateUser = (user) => {
+     this.setState({ user: user })
+  }
   render() {
     return (
       <View style={styles.fundo}>
@@ -12,11 +15,13 @@ export default class App extends Component {
           </TouchableHighlight>
           <Text style={styles.texto}>Dados do veículo</Text>
             <TextInput style = {styles.campotext} placeholder = "Placa do veículo"/>
-            <Picker style = {styles.botao}>
-            <Picker.Item label= "Selecione o tipo do seu veículo" value = ""/>
-            <Picker.Item label="Carro" value = "Carro"/>
-            <Picker.Item label="Moto" value="Moto"/>
+            <View>
+            <Picker style = {styles.botao} selectedValue = {this.state.user} onValueChange = {this.updateUser}>
+            <Picker.Item label= "Selecione o tipo do seu veículo"  value = ""/>
+            <Picker.Item label= "Carro" value = "Carro"/>
+            <Picker.Item label= "Moto" value = "Moto"/>
             </Picker>
+            </View>
             <TouchableHighlight style={styles.botao} onPress = {()=>{this.props.navigator.push({id:'DadosCartao'})}}>
             <Text style = {styles.textoBotao}> Próximo </Text>
           </TouchableHighlight>
@@ -25,7 +30,6 @@ export default class App extends Component {
     );
   }
 }
-
 const styles = StyleSheet.create({
 
   texto:{
@@ -70,7 +74,7 @@ const styles = StyleSheet.create({
     borderRadius: 7,
   },
   textoBotao:{
-    color: '#FFFFFF',
+    color: '#fff',
     fontSize: 20,
     alignSelf: 'center',
   }

@@ -12,7 +12,6 @@ export default class App extends Component {
           <TouchableHighlight style={styles.botao1} onPress = {()=>{this.props.navigator.push({id:'Preferencias'})}}>
         <Text style={styles.textoBotao}> Voltar </Text>
           </TouchableHighlight>
-          
           <Text style={styles.texto}>Perfil</Text>
           <Image style = {styles.imagem} source = {require("./imagens/perfil.png")}/>
           <Text style={styles.texto1}>Membro há 2 semanas</Text>
@@ -85,7 +84,7 @@ const styles = StyleSheet.create({
   botao1:{
     backgroundColor: '#DA0505',
     width: 70,
-    marginTop: 60,
+    marginTop: 20,
     marginLeft: 15,
     padding: 10,
     borderRadius: 7
