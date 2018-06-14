@@ -17,13 +17,13 @@
          </font>
       </Label>
       <TextField fx:id="TextFieldPlaca" layoutX="213.0" layoutY="149.0" prefHeight="26.0" prefWidth="197.0" promptText="Placa do Veículo" />
-      <Button fx:id="ButtonProximo" layoutX="261.0" layoutY="277.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="79.0" style="-fx-background-color: #DF0101;" text="Próximo" />
-      <CheckBox fx:id="CheckBoxTermos" layoutX="202.0" layoutY="331.0" mnemonicParsing="false" text="Eu aceito os termos de uso." />
       <MenuButton fx:id="MenuButtonTipoVeiculo" layoutX="191.0" layoutY="214.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="220.0" style="-fx-background-color: #DF0101;" text="Selecione o tipo do seu veículo" textFill="WHITE">
          <items>
-            <MenuItem mnemonicParsing="false" text="Carro" />
-            <MenuItem mnemonicParsing="false" text="Moto" />
+            <MenuItem fx:id="VeicCarro" mnemonicParsing="false" text="Carro" />
+            <MenuItem fx:id="VeicMoto" mnemonicParsing="false" text="Moto" />
          </items>
       </MenuButton>
+      <Button fx:id="ButtonProximo" layoutX="261.0" layoutY="277.0" mnemonicParsing="false" onAction="#CadastrarVeiculo" prefHeight="36.0" prefWidth="79.0" style="-fx-background-color: #DF0101;" text="Próximo" />
+      <CheckBox fx:id="CheckBoxTermos" layoutX="202.0" layoutY="331.0" mnemonicParsing="false" text="Eu aceito os termos de uso." />
    </children>
 </AnchorPane>
