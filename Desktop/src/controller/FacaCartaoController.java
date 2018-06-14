@@ -6,16 +6,10 @@ import javafx.scene.control.Label;
 
 public class FacaCartaoController {
 
-    @FXML
-    private Button ButtonEuTopo;
-
-    @FXML
-    private Button ButtonPensar;
-
-    @FXML
-    private Label LabelCadastreCartao;
-
-    @FXML
-    private Label LabelReservar;
+	public static final String tituloFacaCartao = "Cadastre o seu cartão de crédito";
+	@FXML private Button ButtonEuTopo;
+    @FXML private Button ButtonPensar;
+    @FXML private Label LabelCadastreCartao;
+    @FXML private Label LabelReservar;
 
 }
