@@ -25,13 +25,13 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="48.0" layoutY="225.0" text="Habilitar sons de notificação">
+      <Label layoutX="48.0" layoutY="230.0" text="Habilitar sons de notificação">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
       <CheckBox layoutX="472.0" layoutY="126.0" mnemonicParsing="false" />
       <CheckBox layoutX="472.0" layoutY="178.0" mnemonicParsing="false" />
-      <CheckBox layoutX="472.0" layoutY="230.0" mnemonicParsing="false" />
+      <CheckBox layoutX="472.0" layoutY="235.0" mnemonicParsing="false" />
    </children>
 </AnchorPane>

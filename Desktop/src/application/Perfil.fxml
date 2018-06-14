@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PerfilController">
    <children>
       <Label fx:id="LabelPerfil" layoutX="255.0" layoutY="28.0" text="Perfil">
          <font>
@@ -35,7 +35,7 @@
          </font>
       </Label>
       <Button fx:id="ButtonSair" layoutX="272.0" layoutY="332.0" mnemonicParsing="false" style="-fx-background-color: #DF0101;" text="Sair do App" />
-      <Button fx:id="ButtonVoltar" layoutX="26.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-color: #DF0101;" text="Voltar" />
+      <Button fx:id="ButtonVoltar" layoutX="26.0" layoutY="22.0" mnemonicParsing="false" onAction="#voltarHome" style="-fx-background-color: #DF0101;" text="Voltar" />
       <ImageView fitHeight="53.0" fitWidth="54.0" layoutX="208.0" layoutY="123.0">
          <image>
             <Image url="@../imagens/perfil.png" />
