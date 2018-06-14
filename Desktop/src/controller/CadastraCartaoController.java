@@ -32,7 +32,7 @@ public class CadastraCartaoController {
     }
     
     public void telaAnterior(ActionEvent event) {
-    	TelaController.carregarTela(event, "/application/FacaCartao.fxml", FacaCartaoController.telaFacaCartao);
+    	TelaController.carregarTela(event, "/application/FacaCartao.fxml", FacaCartaoController.tituloFacaCartao);
     }
     
     private void limpaCampos() {
