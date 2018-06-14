@@ -29,6 +29,10 @@ public class DadosVeiculoController {
 		}
 		
 	}
+	
+    public void BotaoVoltar(ActionEvent event) {
+    	TelaController.carregarTela(event, "/application/Cadastro.fxml", CadastroDadosPessoaisController.tituloTelaCadastroUsuario);
+    }
 
 	private void limparCamposCadastro() {
 		TextFieldPlaca.clear();

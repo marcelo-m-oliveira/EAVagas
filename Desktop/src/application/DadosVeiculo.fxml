@@ -23,7 +23,8 @@
             <MenuItem fx:id="VeicMoto" mnemonicParsing="false" text="Moto" />
          </items>
       </MenuButton>
-      <Button fx:id="ButtonProximo" layoutX="261.0" layoutY="277.0" mnemonicParsing="false" onAction="#CadastrarVeiculo" prefHeight="36.0" prefWidth="79.0" style="-fx-background-color: #DF0101;" text="Próximo" />
+      <Button fx:id="ButtonProximo" layoutX="331.0" layoutY="277.0" mnemonicParsing="false" onAction="#CadastrarVeiculo" prefHeight="36.0" prefWidth="79.0" style="-fx-background-color: #DF0101;" text="Próximo" />
       <CheckBox fx:id="CheckBoxTermos" layoutX="202.0" layoutY="331.0" mnemonicParsing="false" text="Eu aceito os termos de uso." />
+      <Button fx:id="ButtonVoltar" layoutX="202.0" layoutY="277.0" mnemonicParsing="false" onAction="#BotaoVoltar" prefHeight="36.0" prefWidth="79.0" style="-fx-background-color: #DF0101;" text="Voltar" />
    </children>
 </AnchorPane>
