@@ -12,8 +12,6 @@ public class DadosVeiculoController {
 	public static final String tituloDadosVeiculo = "Dados do Veculo";
     @FXML private TextField TextFieldPlaca;
     @FXML private MenuButton MenuButtonTipoVeiculo;
-    @FXML private MenuItem VeicCarro;
-    @FXML private MenuItem VeicMoto;
     
 	public void CadastrarVeiculo(ActionEvent event) {
 		if (VeiculoController.CadastroVeiculo(TextFieldPlaca.getText(),
