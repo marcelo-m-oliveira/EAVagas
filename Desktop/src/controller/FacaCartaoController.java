@@ -1,10 +1,13 @@
 package controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 public class FacaCartaoController {
+	
+	public static final String telaFacaCartao = "Cadastre seu Cartão de Crédito!";
 
     @FXML
     private Button ButtonEuTopo;
@@ -17,5 +20,13 @@ public class FacaCartaoController {
 
     @FXML
     private Label LabelReservar;
+    
+    public void cadastrarCartao(ActionEvent event) {
+    	TelaController.carregarTela(event, "/application/CadastraCartao.fxml", CadastraCartaoController.tituloCadastroCartao);
+    }
+    
+    public void telaHome(ActionEvent event) {
+    	TelaController.carregarTela(event, "/application/Home.fxml", HomeController.telaHome);
+    }
 
 }
