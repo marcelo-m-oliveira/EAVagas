@@ -2,26 +2,26 @@ package model;
 
 public class CartaoCredito { 
 	 
-	  private int numCartao; 
-	  private int codSeguranca; 
-	  private int dataValidade; 
+	  private String numCartao; 
+	  private String codSeguranca; 
+	  private String dataValidade; 
 	   
 	   
-	  public CartaoCredito(int numCartao, int codSeguranca, int dataValidade) { 
+	  public CartaoCredito(String numCartao, String codSeguranca, String dataValidade) { 
 	    this.numCartao = numCartao;  
 	    this.codSeguranca = codSeguranca;  
 	    this.dataValidade = dataValidade; 
 	  } 
 	   
-	  public int getNumCard() { 
+	  public String getNumCard() { 
 	    return numCartao; 
 	  } 
 	 
-	  public int getcodSeguranca() { 
+	  public String getcodSeguranca() { 
 	    return codSeguranca; 
 	  } 
 	   
-	  public int getdataValidade() { 
+	  public String getdataValidade() { 
 	    return dataValidade; 
 	  } 
 	}
