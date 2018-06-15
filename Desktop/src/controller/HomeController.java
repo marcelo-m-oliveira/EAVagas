@@ -8,16 +8,12 @@ import javafx.scene.control.Hyperlink;
 public class HomeController {
 	
 	public static final String telaHome = "EA Vagas";
-
     @FXML
     private Hyperlink HyperlinkDadosUsuario;
-
     @FXML
     private Hyperlink HyperlinkDadosCarro;
-
     @FXML
     private Button ButtonPremium;
-
     @FXML
     private Hyperlink HyperlinkPreferencia;
     
@@ -31,6 +27,9 @@ public class HomeController {
     
     public void sejaPremium(ActionEvent event) {
     	TelaController.carregarTela(event, "/application/FacaCartao.fxml", FacaCartaoController.tituloFacaCartao);
+    }
+    public void TelaVagas(ActionEvent event) {
+    	TelaController.carregarTela(event, "/application/Vagas.fxml", VagasController.tituloTelaVagas);
     }
 
 }

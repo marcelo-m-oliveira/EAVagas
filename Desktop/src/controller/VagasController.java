@@ -7,7 +7,8 @@ import javafx.scene.shape.Circle;
 
 public class VagasController {
 
-    @FXML
+	public static final String tituloTelaVagas = "Vagas";
+	@FXML
     private Button ButtonVoltar;
 
     @FXML

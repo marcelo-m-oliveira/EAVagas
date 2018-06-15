@@ -9,19 +9,14 @@ import javafx.scene.control.Label;
 public class PreferenciasController {
 	
 	public static final String telaPreferencias = "Preferências";
-
     @FXML
     private Label LabelPreferencias;
-
     @FXML
     private Hyperlink HyperlinkConta;
-
     @FXML
     private Hyperlink HyperlinkNotificacoes;
-
     @FXML
     private Hyperlink HyperlinkAjuda;
-
     @FXML
     private Button ButtonVoltar;
     
@@ -31,6 +26,9 @@ public class PreferenciasController {
     
     public void notificacoes(ActionEvent event) {
     	TelaController.carregarTela(event, "/application/Notificacoes.fxml", NotificacoesController.telaNotificacoes);
+    }
+    public void SairdoPrograma(ActionEvent event) {
+    	TelaController.carregarTela(event, "/application/Login.fxml", LoginController.tituloTelaInicial);
     }
 
 }
