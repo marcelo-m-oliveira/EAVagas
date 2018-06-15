@@ -1,34 +1,11 @@
 package controller;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.scene.control.Alert.AlertType;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.shape.Circle;
 
 public class VagasController {
 
 	public static final String tituloTelaVagas = "Vagas";
-	
-    private Button ButtonVoltar;
-    private Label LabelPerdigao;
-    private Label LabelEscolha;
-    private Button ButtonA;
-    private Button ButtonC;
-    private Button ButtonE;
-    private Button ButtonG;
-    private Button ButtonB;
-    private Button ButtonD;
-    private Button ButtonF;
-    private Button ButtonH;
-    private Circle CircleVerde;
-    private Circle CircleAmarelo;
-    private Circle CircleVermelho;
-    private Label LabelDisponivel;
-    private Label LabelReservado;
-    private Label LabelOcupado;
-    private Button ButtonCancelar;
     
     public void voltarHome(ActionEvent event) {
     	TelaController.carregarTela(event, "/application/Home.fxml", VagasController.tituloTelaVagas);
