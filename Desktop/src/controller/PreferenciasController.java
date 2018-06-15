@@ -27,6 +27,11 @@ public class PreferenciasController {
     public void notificacoes(ActionEvent event) {
     	TelaController.carregarTela(event, "/application/Notificacoes.fxml", NotificacoesController.telaNotificacoes);
     }
+    
+    public void ajuda(ActionEvent event) {
+    	TelaController.carregarTela(event, "/application/Ajuda.fxml", AjudaController.telaAjuda);
+    }
+    
     public void SairdoPrograma(ActionEvent event) {
     	TelaController.carregarTela(event, "/application/Login.fxml", LoginController.tituloTelaInicial);
     }
