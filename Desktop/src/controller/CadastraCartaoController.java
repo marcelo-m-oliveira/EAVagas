@@ -18,7 +18,7 @@ public class CadastraCartaoController {
     		TelaController.exibirJanela(AlertType.INFORMATION, CadastraCartaoController.tituloCadastroCartao, 
     				"Cadastro bem-sucedido", "Cadastro de Cartão de Crédito efetuado com sucesso!");
     		limpaCampos();
-    		TelaController.carregarTela(event, "/application/Home.fxml", HomeController.telaHome);
+    		TelaController.carregarTela(event, "/application/HomePremium.fxml", HomePremiumController.telaHomePremium);
     	}else {
     		TelaController.exibirJanela(AlertType.ERROR, CadastraCartaoController.tituloCadastroCartao, 
     				"Falha no cadastro", "Falha ao cadastrar cartão de crédito. Verifique os dados preenchidos e tente novamente.");
