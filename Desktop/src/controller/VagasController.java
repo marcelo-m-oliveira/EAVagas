@@ -2,6 +2,7 @@ package controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.shape.Circle;
@@ -9,62 +10,73 @@ import javafx.scene.shape.Circle;
 public class VagasController {
 
 	public static final String tituloTelaVagas = "Vagas";
-	@FXML
+	
     private Button ButtonVoltar;
-
-    @FXML
     private Label LabelPerdigao;
-
-    @FXML
     private Label LabelEscolha;
-
-    @FXML
     private Button ButtonA;
-
-    @FXML
     private Button ButtonC;
-
-    @FXML
     private Button ButtonE;
-
-    @FXML
     private Button ButtonG;
-
-    @FXML
     private Button ButtonB;
-
-    @FXML
     private Button ButtonD;
-
-    @FXML
     private Button ButtonF;
-
-    @FXML
     private Button ButtonH;
-
-    @FXML
     private Circle CircleVerde;
-
-    @FXML
     private Circle CircleAmarelo;
-
-    @FXML
     private Circle CircleVermelho;
-
-    @FXML
     private Label LabelDisponivel;
-
-    @FXML
     private Label LabelReservado;
-
-    @FXML
     private Label LabelOcupado;
-
-    @FXML
     private Button ButtonCancelar;
     
     public void voltarHome(ActionEvent event) {
     	TelaController.carregarTela(event, "/application/Home.fxml", VagasController.tituloTelaVagas);
+    }
+    
+    public void vagaA(ActionEvent event) {
+    	TelaController.exibirJanela(AlertType.INFORMATION, VagasController.tituloTelaVagas, 
+    			"Vaga Reservada", "Vaga reservada com sucesso!");
+    	TelaController.carregarTela(event, "/application/Home.fxml", VagasController.tituloTelaVagas);
+    }
+    
+    public void vagaB(ActionEvent event) {
+    	TelaController.exibirJanela(AlertType.INFORMATION, VagasController.tituloTelaVagas, 
+    			"Vaga Reservada", "Vaga reservada com sucesso!");
+    	TelaController.carregarTela(event, "/application/Home.fxml", VagasController.tituloTelaVagas);
+    }
+    
+    public void vagaC(ActionEvent event) {
+    	TelaController.exibirJanela(AlertType.INFORMATION, VagasController.tituloTelaVagas, 
+    			"Vaga Reservada Por Outro Usuário", "Essa vaga foi reservada por outra pessoa. Tente outra vaga!");
+    
+    }
+    
+    public void vagaD(ActionEvent event) {
+    	TelaController.exibirJanela(AlertType.INFORMATION, VagasController.tituloTelaVagas, 
+    			"Vaga Ocupada", "Vaga já ocupada. Tente outra vaga!");
+    }
+    
+    public void vagaE(ActionEvent event) {
+    	TelaController.exibirJanela(AlertType.INFORMATION, VagasController.tituloTelaVagas, 
+    			"Vaga Ocupada", "Vaga já ocupada. Tente outra vaga!");
+    }
+    
+    public void vagaF(ActionEvent event) {
+    	TelaController.exibirJanela(AlertType.INFORMATION, VagasController.tituloTelaVagas, 
+    			"Vaga Reservada", "Vaga reservada com sucesso!");
+    	TelaController.carregarTela(event, "/application/Home.fxml", VagasController.tituloTelaVagas);
+    }
+    
+    public void vagaG(ActionEvent event) {
+    	TelaController.exibirJanela(AlertType.INFORMATION, VagasController.tituloTelaVagas, 
+    			"Vaga Reservada", "Vaga reservada com sucesso!");
+    	TelaController.carregarTela(event, "/application/Home.fxml", VagasController.tituloTelaVagas);
+    }
+    
+    public void vagaH(ActionEvent event) {
+    	TelaController.exibirJanela(AlertType.INFORMATION, VagasController.tituloTelaVagas, 
+    			"Vaga Reservada Por Outro Usuário", "Essa vaga foi reservada por outra pessoa. Tente outra vaga!");
     }
 
 }
