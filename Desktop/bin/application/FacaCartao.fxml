@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FacaCartaoController">
+   <children>
+      <Button fx:id="ButtonEuTopo" layoutX="162.0" layoutY="288.0" mnemonicParsing="false" onAction="#cadastrarCartao" prefHeight="32.0" prefWidth="108.0" style="-fx-background-color: #DF0101;" text="EU TOPO!" textFill="WHITE" />
+      <Button fx:id="ButtonPensar" layoutX="327.0" layoutY="288.0" mnemonicParsing="false" onAction="#telaHome" prefHeight="32.0" prefWidth="108.0" style="-fx-background-color: #BDBDBD;" text="VOU PENSAR" />
+      <Label fx:id="LabelCadastreCartao" layoutX="64.0" layoutY="33.0" text="Cadastre o seu Cartão de Crédito!">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelReservar" layoutX="60.0" layoutY="126.0" prefHeight="80.0" prefWidth="480.0" text="Reservar sua vaga fica ainda mais fácil com um pagamento antecipado! Fique tranquilo, não abriremos mão da sua vaga até que cancele o pagamento." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
