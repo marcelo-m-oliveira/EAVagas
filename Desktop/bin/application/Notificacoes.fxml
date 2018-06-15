@@ -6,32 +6,31 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NotificacoesController">
    <children>
-      <Button layoutX="24.0" layoutY="14.0" mnemonicParsing="false" text="Voltar" />
-      <Label layoutX="218.0" layoutY="50.0" text="Notificações">
+      <Button fx:id="ButtonVoltar" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltarPref" text="Voltar" />
+      <Label fx:id="LabelNotificacoes" layoutX="218.0" layoutY="50.0" text="Notificações">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <Label layoutX="48.0" layoutY="121.0" text="Habilitar notificações na área de trabalho">
+      <Label fx:id="LabelHabNot" layoutX="48.0" layoutY="121.0" text="Habilitar notificações na área de trabalho">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="48.0" layoutY="173.0" text="Desativar notificações gerais">
+      <Label fx:id="LabelDesatNot" layoutX="48.0" layoutY="173.0" text="Desativar notificações gerais">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="48.0" layoutY="230.0" text="Habilitar sons de notificação">
+      <Label fx:id="LabelHabSons" layoutX="48.0" layoutY="230.0" text="Habilitar sons de notificação">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <CheckBox layoutX="472.0" layoutY="126.0" mnemonicParsing="false" />
-      <CheckBox layoutX="472.0" layoutY="178.0" mnemonicParsing="false" />
-      <CheckBox layoutX="472.0" layoutY="235.0" mnemonicParsing="false" />
+      <CheckBox fx:id="CheckBoxHabNot" layoutX="472.0" layoutY="126.0" mnemonicParsing="false" />
+      <CheckBox fx:id="CheckBoxDesatNot" layoutX="472.0" layoutY="178.0" mnemonicParsing="false" />
+      <CheckBox fx:id="CheckBoxHabSons" layoutX="472.0" layoutY="235.0" mnemonicParsing="false" />
    </children>
 </AnchorPane>
