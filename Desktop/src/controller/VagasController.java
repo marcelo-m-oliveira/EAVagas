@@ -1,5 +1,6 @@
 package controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -61,6 +62,10 @@ public class VagasController {
 
     @FXML
     private Button ButtonCancelar;
+    
+    public void voltarHome(ActionEvent event) {
+    	TelaController.carregarTela(event, "/application/Home.fxml", VagasController.tituloTelaVagas);
+    }
 
 }
 
