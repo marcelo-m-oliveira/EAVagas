@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PreferenciasController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PreferenciasController">
    <children>
       <Button fx:id="ButtonVoltar" layoutX="21.0" layoutY="20.0" mnemonicParsing="false" onAction="#voltar" style="-fx-background-color: #DF0101;" text="Voltar" textFill="WHITE" />
       <Label fx:id="LabelPreferencias" layoutX="196.0" layoutY="32.0" text="Preferências">
@@ -19,11 +19,11 @@
             <Font size="24.0" />
          </font>
       </Hyperlink>
-      <Hyperlink fx:id="HyperlinkAjuda" layoutX="262.0" layoutY="212.0" text="Ajuda" textFill="#df0101">
+      <Hyperlink fx:id="HyperlinkAjuda" layoutX="262.0" layoutY="212.0" onAction="#ajuda" text="Ajuda" textFill="#df0101">
          <font>
             <Font size="24.0" />
          </font>
       </Hyperlink>
-      <Button fx:id="ButtonSair" layoutX="206.0" layoutY="319.0" mnemonicParsing="false" onAction="#SairdoPrograma" prefHeight="32.0" prefWidth="190.0" style="-fx-background-color: #DF0101;" text="Sair" textFill="WHITE" />
+      <Button fx:id="ButtonSair" layoutX="206.0" layoutY="319.0" mnemonicParsing="false" onAction="#sairDoPrograma" prefHeight="32.0" prefWidth="190.0" style="-fx-background-color: #DF0101;" text="Sair" textFill="WHITE" />
    </children>
 </AnchorPane>

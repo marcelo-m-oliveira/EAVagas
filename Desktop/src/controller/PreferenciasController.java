@@ -32,7 +32,7 @@ public class PreferenciasController {
     	TelaController.carregarTela(event, "/application/Ajuda.fxml", AjudaController.telaAjuda);
     }
     
-    public void SairdoPrograma(ActionEvent event) {
+    public void sairDoPrograma(ActionEvent event) {
     	TelaController.carregarTela(event, "/application/Login.fxml", LoginController.tituloTelaInicial);
     }
 

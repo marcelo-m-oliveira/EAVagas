@@ -65,6 +65,10 @@ public class Pessoa {
 	public void reservarVaga() {
 
 	}
+	
+	public String getConfirmaSenha() {
+		return confirmaSenha;
+	}
 
 	@Override
 	// Sobrescrita do método hashCode() necessária para que o método equals()
