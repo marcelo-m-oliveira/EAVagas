@@ -24,6 +24,7 @@ public class LoginController {
 		if (UsuarioController.autenticarUsuario(TextFieldEmail.getText(), PasswordFieldSenha.getText())) {
 			TelaController.exibirJanela(AlertType.INFORMATION, LoginController.tituloTelaInicial, "Operação realizada!",
 					"Login realizado com sucesso! Nome: " + TextFieldEmail.getText());
+			TelaController.carregarTela(event, "/application/Home.fxml", HomeController.telaHome);
 		} else {
 			TelaController.exibirJanela(AlertType.ERROR, LoginController.tituloTelaInicial, "Erro!",
 					"Não foi possível realizar login!");
