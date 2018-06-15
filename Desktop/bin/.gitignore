@@ -1,3 +1,7 @@
-/model/
+/.classpath
+/.project
 /application/
 /controller/
+/imagens/
+/model/
+/src.iml

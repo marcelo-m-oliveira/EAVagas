@@ -14,17 +14,12 @@
             <Font name="System Bold" size="36.0" />
          </font>
       </Label>
-      <Hyperlink fx:id="HyperlinkConta" layoutX="262.0" layoutY="122.0" text="Conta" textFill="#df0101">
+      <Hyperlink fx:id="HyperlinkNotificacoes" layoutX="228.0" layoutY="144.0" onAction="#notificacoes" text="Notificações" textFill="#df0101">
          <font>
             <Font size="24.0" />
          </font>
       </Hyperlink>
-      <Hyperlink fx:id="HyperlinkNotificacoes" layoutX="228.0" layoutY="178.0" onAction="#notificacoes" text="Notificações" textFill="#df0101">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Hyperlink>
-      <Hyperlink fx:id="HyperlinkAjuda" layoutX="262.0" layoutY="231.0" text="Ajuda" textFill="#df0101">
+      <Hyperlink fx:id="HyperlinkAjuda" layoutX="262.0" layoutY="212.0" text="Ajuda" textFill="#df0101">
          <font>
             <Font size="24.0" />
          </font>
