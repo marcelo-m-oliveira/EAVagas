@@ -20,37 +20,44 @@ export default class App extends Component {
           
             
             <TouchableHighlight style = {styles.botao1}
-              onPress = {Alert.alert('Vaga reservada!')}>
+              onPress ={()=>{Alert.alert('Vaga reservada!')}}>
               <Text style = {styles.textoBotao}> A </Text>
             </TouchableHighlight>
             
-            <TouchableOpacity style = {styles.botao2}>
+            <TouchableHighlight style = {styles.botao2}
+              onPress ={()=>{Alert.alert('Vaga reservada!')}}>
               <Text style = {styles.textoBotao}> B </Text>
-            </TouchableOpacity>
+            </TouchableHighlight>
             
-            <TouchableOpacity style = {styles.botao3}>
+            <TouchableHighlight style = {styles.botao3}
+              onPress = {() => {Alert.alert('Esta vaga já foi reservada por outro usuário. Tente outra vaga!')}}>
               <Text style = {styles.textoBotao}> C </Text>
-            </TouchableOpacity>
+            </TouchableHighlight>
             
-            <TouchableOpacity style = {styles.botao4}>
+            <TouchableHighlight style = {styles.botao4}
+              onPress = {() => {Alert.alert('Esta vaga já está ocupada. Tente outra vaga!')}}>
               <Text style = {styles.textoBotao}> D </Text>
-            </TouchableOpacity>
+            </TouchableHighlight>
             
-            <TouchableOpacity style = {styles.botao5}>
+            <TouchableHighlight style = {styles.botao5}
+              onPress ={() => {Alert.alert('Esta vaga já está ocupada. Tente outra vaga!')}}>
               <Text style = {styles.textoBotao}> E </Text>
-            </TouchableOpacity>
+            </TouchableHighlight>
             
-            <TouchableOpacity style = {styles.botao6}>
+            <TouchableHighlight style = {styles.botao6}
+              onPress ={() => {Alert.alert('Vaga reservada!')}}>
               <Text style = {styles.textoBotao}> F </Text>
-            </TouchableOpacity>
+            </TouchableHighlight>
             
-            <TouchableOpacity style = {styles.botao7}>
+            <TouchableHighlight style = {styles.botao7}
+              onPress = {() => {Alert.alert('Vaga reservada!')}}>
               <Text style = {styles.textoBotao}> G </Text>
-            </TouchableOpacity>
+            </TouchableHighlight>
             
-            <TouchableOpacity style = {styles.botao8}>
+            <TouchableHighlight style = {styles.botao8}
+              onPress ={()=>{Alert.alert('Esta vaga já foi reservada por outro usuário. Tente outra vaga!')}}>
               <Text style = {styles.textoBotao}> H </Text>
-            </TouchableOpacity>
+            </TouchableHighlight>
             
             <TouchableHighlight style={styles.botao9} onPress = {()=>{this.props.navigator.push({id:'TelaHome1'})}}>
         <Text style={styles.textoBotao}> Cancelar </Text>
