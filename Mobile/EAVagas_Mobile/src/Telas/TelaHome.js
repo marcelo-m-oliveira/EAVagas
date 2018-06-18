@@ -9,7 +9,7 @@ export default class App extends Component {
         <View>
         <Image style = {styles.imagem} source = {require("./imagens/logo.png")}/>
         <Text style={styles.texto2}>EA Vagas</Text>
-        <TouchableHighlight style={styles.botao} onPress = {()=>{this.props.navigator.push({id:'CadastrarCartao'})}}>
+        <TouchableHighlight style={styles.botao} onPress = {()=>{this.props.navigator.push({id:'DadosCartao'})}}>
             <Text style = {styles.textoBotao}> Seja Premium </Text>
           </TouchableHighlight>
           <TouchableHighlight style = {styles.imagem1} onPress = {()=>{this.props.navigator.push({id:'Preferencias'})}}>
