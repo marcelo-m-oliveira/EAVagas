@@ -8,10 +8,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.fundo}>
-          <View>  
-          <TouchableHighlight style={styles.botao} onPress = {()=>{this.props.navigator.push({id:'TelaHome1'})}}>
-        <Text style={styles.textoBotao}> Voltar </Text>
-          </TouchableHighlight>
+          <View> 
           <Text style={styles.texto}>Estacionamento Perdigão</Text>
           <Text style={styles.texto1}>Escolha sua vaga</Text>
           <Text style={styles.texto2}>★ <Text style={styles.texto5}>Disponível</Text></Text>
